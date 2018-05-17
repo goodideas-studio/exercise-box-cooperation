@@ -15,7 +15,7 @@
         <!--Game Records View Controller-->
         <scene sceneID="coh-g3-QoM">
             <objects>
-                <viewController id="k6I-ER-YoF" customClass="GameRecordsViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameRecordsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k6I-ER-YoF" customClass="GameRecordsViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qN-sI-EVC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

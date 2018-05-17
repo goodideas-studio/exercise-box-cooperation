@@ -17,6 +17,11 @@ class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableV
     super.viewDidLoad()
     
   }
+    
+  override func viewWillAppear(_ animated: Bool) {
+    print(gameRecordArray)
+    gameRecordTableView.reloadData()
+  }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()

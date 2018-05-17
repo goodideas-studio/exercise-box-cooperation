@@ -185,8 +185,12 @@ class ViewController: UIViewController {
     func gameOver() {
         
         let date = getTime()
-        let rgsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
+        let rpsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let tableViewController = storyboard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
+            tableViewController.gameRecordArray.append(rpsRecord)
+        }
         
         
         
