@@ -19,6 +19,11 @@
 		D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */; };
 		D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701020AD38ED001B3F91 /* GameListViewController.swift */; };
 		D6AA701420AD39A1001B3F91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701320AD39A1001B3F91 /* Game.swift */; };
+		D6AA702020AD67AE001B3F91 /* TapStarbucks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA701C20AD67AE001B3F91 /* TapStarbucks.storyboard */; };
+		D6AA702120AD67AE001B3F91 /* TapStarbucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701D20AD67AE001B3F91 /* TapStarbucksViewController.swift */; };
+		D6AA702220AD67AE001B3F91 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701E20AD67AE001B3F91 /* testViewController.swift */; };
+		D6AA702320AD67AE001B3F91 /* TapStarbucksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */; };
+		D6AA702520AD6812001B3F91 /* QRCodeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */; };
 		E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969520AD66E100B1BF41 /* DeviceInput.swift */; };
 		E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969620AD66E100B1BF41 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +43,11 @@
 		D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListTableViewCell.swift; sourceTree = "<group>"; };
 		D6AA701020AD38ED001B3F91 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		D6AA701320AD39A1001B3F91 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D6AA701C20AD67AE001B3F91 /* TapStarbucks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TapStarbucks.storyboard; sourceTree = "<group>"; };
+		D6AA701D20AD67AE001B3F91 /* TapStarbucksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapStarbucksViewController.swift; sourceTree = "<group>"; };
+		D6AA701E20AD67AE001B3F91 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapStarbucksModel.swift; sourceTree = "<group>"; };
+		D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeStoryboard.storyboard; sourceTree = "<group>"; };
 		E020969520AD66E100B1BF41 /* DeviceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInput.swift; sourceTree = "<group>"; };
 		E020969620AD66E100B1BF41 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,10 +85,12 @@
 				E020969520AD66E100B1BF41 /* DeviceInput.swift */,
 				E020969620AD66E100B1BF41 /* QRCodeViewController.swift */,
 				D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */,
+				D6AA701B20AD67AE001B3F91 /* TapStarbucks */,
 				D6AA701220AD3992001B3F91 /* Model */,
 				D6AA700820AD2207001B3F91 /* View */,
 				D6AA700D20AD2500001B3F91 /* Controllers */,
 				D6AA6FF620AD1A1F001B3F91 /* Main.storyboard */,
+				D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */,
 				D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */,
 				D6AA6FFB20AD1A20001B3F91 /* LaunchScreen.storyboard */,
 				D6AA6FFE20AD1A20001B3F91 /* Info.plist */,
@@ -113,6 +125,17 @@
 				D6AA701320AD39A1001B3F91 /* Game.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D6AA701B20AD67AE001B3F91 /* TapStarbucks */ = {
+			isa = PBXGroup;
+			children = (
+				D6AA701C20AD67AE001B3F91 /* TapStarbucks.storyboard */,
+				D6AA701D20AD67AE001B3F91 /* TapStarbucksViewController.swift */,
+				D6AA701E20AD67AE001B3F91 /* testViewController.swift */,
+				D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */,
+			);
+			path = TapStarbucks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6AA6FFD20AD1A20001B3F91 /* LaunchScreen.storyboard in Resources */,
+				D6AA702520AD6812001B3F91 /* QRCodeStoryboard.storyboard in Resources */,
+				D6AA702020AD67AE001B3F91 /* TapStarbucks.storyboard in Resources */,
 				D6AA6FFA20AD1A20001B3F91 /* Assets.xcassets in Resources */,
 				D6AA6FF820AD1A1F001B3F91 /* Main.storyboard in Resources */,
 			);
@@ -192,9 +217,12 @@
 				D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */,
 				D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */,
 				E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */,
+				D6AA702120AD67AE001B3F91 /* TapStarbucksViewController.swift in Sources */,
 				D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */,
 				D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */,
 				D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */,
+				D6AA702320AD67AE001B3F91 /* TapStarbucksModel.swift in Sources */,
+				D6AA702220AD67AE001B3F91 /* testViewController.swift in Sources */,
 				D6AA700A20AD24B6001B3F91 /* RecordTableViewCell.swift in Sources */,
 				D6AA6FF320AD1A1F001B3F91 /* AppDelegate.swift in Sources */,
 			);
@@ -341,13 +369,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPX664SYD7;
+				DEVELOPMENT_TEAM = 47R4BK8PQH;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame12333;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,13 +387,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPX664SYD7;
+				DEVELOPMENT_TEAM = 47R4BK8PQH;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame12333;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

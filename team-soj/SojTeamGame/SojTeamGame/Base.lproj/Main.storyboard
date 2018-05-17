@@ -77,6 +77,9 @@
                                 <state key="normal" title="儲值">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ESv-Jf-j83" kind="show" id="Yxi-ir-qa9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-HV-DrI" customClass="CornerButton" customModule="SojTeamGame" customModuleProvider="target">
                                 <rect key="frame" x="67" y="505" width="286" height="40"/>
@@ -271,11 +274,28 @@
                     <navigationItem key="navigationItem" title="遊戲紀錄" id="HWp-El-ELm"/>
                     <connections>
                         <outlet property="recordTableView" destination="dGH-bR-KAX" id="Vrb-eU-d0E"/>
+                        <segue destination="Yfd-WC-yIC" kind="show" identifier="performTapStarbucks" id="ESA-xK-f9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uaz-T3-fNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2151" y="402"/>
+            <point key="canvasLocation" x="2013" y="283"/>
+        </scene>
+        <!--TapStarbucks-->
+        <scene sceneID="5QU-wL-QMQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TapStarbucks" id="Yfd-WC-yIC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0b3-H7-quC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2788" y="193"/>
+        </scene>
+        <!--QRCodeStoryboard-->
+        <scene sceneID="V1f-r8-0mw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRCodeStoryboard" id="ESv-Jf-j83" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRw-Hs-ylh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013" y="863"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aMw-56-RsR">

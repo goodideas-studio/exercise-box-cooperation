@@ -51,6 +51,7 @@ extension GameListViewController: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.row {
         case GameChoice.tapStarbucks.rawValue:
             Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
+            performSegue(withIdentifier: "performTapStarbucks", sender: nil)
             print("剩下錢",Record.current.coin)
         case GameChoice.blackJack.rawValue:
             Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
