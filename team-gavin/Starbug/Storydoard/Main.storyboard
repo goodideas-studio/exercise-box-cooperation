@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,6 +30,9 @@
                                 <state key="normal" title="開始遊戲">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yUz-Zb-gFy" kind="show" id="gBr-SZ-yff"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-RA-yih">
                                 <rect key="frame" x="87" y="499" width="200" height="30"/>
@@ -138,6 +142,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--遊戲列表-->
+        <scene sceneID="XuP-Qp-nnN">
+            <objects>
+                <viewController id="yUz-Zb-gFy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Voh-t4-Vas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg8-Ad-q5W">
+                                <rect key="frame" x="40" y="94" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.50588235294117645" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-nD-zLo">
+                                <rect key="frame" x="40" y="154" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.50588235290000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmN-nF-h9t">
+                                <rect key="frame" x="253" y="60" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-DR-NC5">
+                                <rect key="frame" x="253" y="119" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JmN-nF-h9t" firstAttribute="height" secondItem="Yg8-Ad-q5W" secondAttribute="height" multiplier="0.6" id="4JJ-JR-ZCZ"/>
+                            <constraint firstItem="xSe-nD-zLo" firstAttribute="top" secondItem="Yg8-Ad-q5W" secondAttribute="bottom" constant="20" id="7rV-Dg-oOs"/>
+                            <constraint firstItem="xSe-nD-zLo" firstAttribute="leading" secondItem="I7t-dX-Gff" secondAttribute="leading" constant="40" id="8mA-e8-Oky"/>
+                            <constraint firstItem="Yg8-Ad-q5W" firstAttribute="height" secondItem="Voh-t4-Vas" secondAttribute="height" multiplier="0.06" id="JQV-OJ-VRO"/>
+                            <constraint firstItem="JmN-nF-h9t" firstAttribute="width" secondItem="Yg8-Ad-q5W" secondAttribute="width" multiplier="0.3" id="MMC-hW-ref"/>
+                            <constraint firstItem="xSe-nD-zLo" firstAttribute="height" secondItem="Voh-t4-Vas" secondAttribute="height" multiplier="0.06" id="Vzg-4a-iuN"/>
+                            <constraint firstItem="qKp-DR-NC5" firstAttribute="width" secondItem="xSe-nD-zLo" secondAttribute="width" constant="0.29999999999999999" id="WLQ-jO-dzg"/>
+                            <constraint firstItem="qKp-DR-NC5" firstAttribute="height" secondItem="xSe-nD-zLo" secondAttribute="height" constant="0.59999999999999998" id="c79-94-PlO"/>
+                            <constraint firstItem="Yg8-Ad-q5W" firstAttribute="top" secondItem="I7t-dX-Gff" secondAttribute="top" constant="30" id="ekE-km-kVI"/>
+                            <constraint firstItem="I7t-dX-Gff" firstAttribute="trailing" secondItem="xSe-nD-zLo" secondAttribute="trailing" constant="40" id="fKQ-dn-BfS"/>
+                            <constraint firstItem="Yg8-Ad-q5W" firstAttribute="leading" secondItem="I7t-dX-Gff" secondAttribute="leading" constant="40" id="lt8-09-rod"/>
+                            <constraint firstItem="I7t-dX-Gff" firstAttribute="trailing" secondItem="Yg8-Ad-q5W" secondAttribute="trailing" constant="40" id="tIs-ll-cTs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I7t-dX-Gff"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="遊戲列表" id="6Nt-D4-jgW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G88-WW-pc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="-77"/>
         </scene>
         <!--GameRecords-->
         <scene sceneID="Ccf-Ws-cW3">

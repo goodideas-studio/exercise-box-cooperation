@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,14 +57,14 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUS-W9-ctq">
-                                                            <rect key="frame" x="272" y="-1.3333333333333339" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpQ-vq-3F6">
+                                                            <rect key="frame" x="272" y="15" width="180" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpQ-vq-3F6">
-                                                            <rect key="frame" x="320" y="21.666666666666671" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUS-W9-ctq">
+                                                            <rect key="frame" x="272" y="0.0" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -88,9 +89,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
+                                            <constraint firstItem="hUS-W9-ctq" firstAttribute="top" secondItem="WzG-HG-QoD" secondAttribute="top" id="9Hf-JE-Nog"/>
+                                            <constraint firstItem="hUS-W9-ctq" firstAttribute="width" secondItem="WzG-HG-QoD" secondAttribute="width" multiplier="0.4" id="izh-Fu-qHL"/>
+                                            <constraint firstAttribute="trailing" secondItem="hUS-W9-ctq" secondAttribute="trailing" constant="50" id="qWw-9S-jtm"/>
+                                            <constraint firstItem="hUS-W9-ctq" firstAttribute="height" secondItem="WzG-HG-QoD" secondAttribute="height" multiplier="0.4" id="xAP-jM-uKX"/>
                                             <constraint firstItem="eZh-8S-sAq" firstAttribute="height" secondItem="WzG-HG-QoD" secondAttribute="height" id="xSw-Oz-Ksr"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="PlayedDateLabel" destination="rpQ-vq-3F6" id="VKB-1G-0FY"/>
                                             <outlet property="gameNameLabel" destination="TsT-wG-Brr" id="CVw-sm-7dA"/>
                                             <outlet property="gameScoreLabel" destination="hUS-W9-ctq" id="fSy-yT-rxP"/>
                                             <outlet property="itemOrderLabel" destination="cJb-j9-J4K" id="o2b-g7-Iik"/>
