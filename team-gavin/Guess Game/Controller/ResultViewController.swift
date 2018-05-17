@@ -16,6 +16,9 @@ class ResultViewController: UIViewController {
     
     var highestScore:Int?
     
+    
+    
+    
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var restartOutlet: UIButton!
     
@@ -33,7 +36,9 @@ class ResultViewController: UIViewController {
     
     @IBAction func restartButton(_ sender: UIButton) {
         scoreForResult = 0
-        let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: <#T##Date#>)
+        let date = getTime()
+        let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: date)
+        print(guessGameRecord.date)
         
     }
     
