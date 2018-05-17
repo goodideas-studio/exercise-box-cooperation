@@ -9,8 +9,7 @@
 import UIKit
 
 class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
- var tableViewCellTitle = ["game1", "game1","game1", "game1"]
-  
+  var gameRecordArray: [PlayRecord] = []
   
   @IBOutlet weak var gameRecordTableView: UITableView!
 
