@@ -8,22 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		D6AA6FF320AD1A1F001B3F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */; };
-		D6AA6FF520AD1A1F001B3F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA6FF420AD1A1F001B3F91 /* ViewController.swift */; };
+		D6AA6FF520AD1A1F001B3F91 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */; };
 		D6AA6FF820AD1A1F001B3F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA6FF620AD1A1F001B3F91 /* Main.storyboard */; };
 		D6AA6FFA20AD1A20001B3F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */; };
 		D6AA6FFD20AD1A20001B3F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA6FFB20AD1A20001B3F91 /* LaunchScreen.storyboard */; };
 		D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700420AD1A3B001B3F91 /* Singleton.swift */; };
+		D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700620AD21E1001B3F91 /* ButtonStyle.swift */; };
+		D6AA700A20AD24B6001B3F91 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700920AD24B6001B3F91 /* RecordTableViewCell.swift */; };
+		D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */; };
+		D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */; };
+		D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701020AD38ED001B3F91 /* GameListViewController.swift */; };
+		D6AA701420AD39A1001B3F91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701320AD39A1001B3F91 /* Game.swift */; };
+		D6AA702020AD67AE001B3F91 /* TapStarbucks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA701C20AD67AE001B3F91 /* TapStarbucks.storyboard */; };
+		D6AA702120AD67AE001B3F91 /* TapStarbucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701D20AD67AE001B3F91 /* TapStarbucksViewController.swift */; };
+		D6AA702220AD67AE001B3F91 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701E20AD67AE001B3F91 /* testViewController.swift */; };
+		D6AA702320AD67AE001B3F91 /* TapStarbucksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */; };
+		D6AA702520AD6812001B3F91 /* QRCodeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */; };
+		D6AA702920AD811F001B3F91 /* PokerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA702820AD811E001B3F91 /* PokerGame.storyboard */; };
+		D6AA702B20AD8146001B3F91 /* BlackJackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */; };
+		E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969520AD66E100B1BF41 /* DeviceInput.swift */; };
+		E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969620AD66E100B1BF41 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6AA6FEF20AD1A1F001B3F91 /* SojTeamGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SojTeamGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6AA6FF420AD1A1F001B3F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D6AA6FF720AD1A1F001B3F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6AA6FFC20AD1A20001B3F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6AA6FFE20AD1A20001B3F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6AA700420AD1A3B001B3F91 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		D6AA700620AD21E1001B3F91 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		D6AA700920AD24B6001B3F91 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListTableViewCell.swift; sourceTree = "<group>"; };
+		D6AA701020AD38ED001B3F91 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		D6AA701320AD39A1001B3F91 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D6AA701C20AD67AE001B3F91 /* TapStarbucks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TapStarbucks.storyboard; sourceTree = "<group>"; };
+		D6AA701D20AD67AE001B3F91 /* TapStarbucksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapStarbucksViewController.swift; sourceTree = "<group>"; };
+		D6AA701E20AD67AE001B3F91 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapStarbucksModel.swift; sourceTree = "<group>"; };
+		D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeStoryboard.storyboard; sourceTree = "<group>"; };
+		D6AA702820AD811E001B3F91 /* PokerGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PokerGame.storyboard; sourceTree = "<group>"; };
+		D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackJackVC.swift; sourceTree = "<group>"; };
+		E020969520AD66E100B1BF41 /* DeviceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInput.swift; sourceTree = "<group>"; };
+		E020969620AD66E100B1BF41 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +86,62 @@
 		D6AA6FF120AD1A1F001B3F91 /* SojTeamGame */ = {
 			isa = PBXGroup;
 			children = (
+				E020969520AD66E100B1BF41 /* DeviceInput.swift */,
+				E020969620AD66E100B1BF41 /* QRCodeViewController.swift */,
 				D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */,
-				D6AA700420AD1A3B001B3F91 /* Singleton.swift */,
-				D6AA6FF420AD1A1F001B3F91 /* ViewController.swift */,
+				D6AA701B20AD67AE001B3F91 /* TapStarbucks */,
+				D6AA701220AD3992001B3F91 /* Model */,
+				D6AA700820AD2207001B3F91 /* View */,
+				D6AA700D20AD2500001B3F91 /* Controllers */,
 				D6AA6FF620AD1A1F001B3F91 /* Main.storyboard */,
+				D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */,
+				D6AA702820AD811E001B3F91 /* PokerGame.storyboard */,
 				D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */,
 				D6AA6FFB20AD1A20001B3F91 /* LaunchScreen.storyboard */,
 				D6AA6FFE20AD1A20001B3F91 /* Info.plist */,
 			);
 			path = SojTeamGame;
+			sourceTree = "<group>";
+		};
+		D6AA700820AD2207001B3F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6AA700620AD21E1001B3F91 /* ButtonStyle.swift */,
+				D6AA700920AD24B6001B3F91 /* RecordTableViewCell.swift */,
+				D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6AA700D20AD2500001B3F91 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */,
+				D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */,
+				D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */,
+				D6AA701020AD38ED001B3F91 /* GameListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D6AA701220AD3992001B3F91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6AA700420AD1A3B001B3F91 /* Singleton.swift */,
+				D6AA701320AD39A1001B3F91 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6AA701B20AD67AE001B3F91 /* TapStarbucks */ = {
+			isa = PBXGroup;
+			children = (
+				D6AA701C20AD67AE001B3F91 /* TapStarbucks.storyboard */,
+				D6AA701D20AD67AE001B3F91 /* TapStarbucksViewController.swift */,
+				D6AA701E20AD67AE001B3F91 /* testViewController.swift */,
+				D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */,
+			);
+			path = TapStarbucks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6AA6FFD20AD1A20001B3F91 /* LaunchScreen.storyboard in Resources */,
+				D6AA702520AD6812001B3F91 /* QRCodeStoryboard.storyboard in Resources */,
+				D6AA702020AD67AE001B3F91 /* TapStarbucks.storyboard in Resources */,
 				D6AA6FFA20AD1A20001B3F91 /* Assets.xcassets in Resources */,
+				D6AA702920AD811F001B3F91 /* PokerGame.storyboard in Resources */,
 				D6AA6FF820AD1A1F001B3F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +218,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6AA6FF520AD1A1F001B3F91 /* ViewController.swift in Sources */,
+				D6AA6FF520AD1A1F001B3F91 /* MenuViewController.swift in Sources */,
+				D6AA701420AD39A1001B3F91 /* Game.swift in Sources */,
+				E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */,
+				D6AA702B20AD8146001B3F91 /* BlackJackVC.swift in Sources */,
+				D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */,
 				D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */,
+				E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */,
+				D6AA702120AD67AE001B3F91 /* TapStarbucksViewController.swift in Sources */,
+				D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */,
+				D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */,
+				D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */,
+				D6AA702320AD67AE001B3F91 /* TapStarbucksModel.swift in Sources */,
+				D6AA702220AD67AE001B3F91 /* testViewController.swift in Sources */,
+				D6AA700A20AD24B6001B3F91 /* RecordTableViewCell.swift in Sources */,
 				D6AA6FF320AD1A1F001B3F91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,13 +377,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47R4BK8PQH;
+				DEVELOPMENT_TEAM = KRCKVX62FU;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
+				PRODUCT_BUNDLE_IDENTIFIER = comSoJ.SojTeamGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,13 +395,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47R4BK8PQH;
+				DEVELOPMENT_TEAM = KRCKVX62FU;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
+				PRODUCT_BUNDLE_IDENTIFIER = comSoJ.SojTeamGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
