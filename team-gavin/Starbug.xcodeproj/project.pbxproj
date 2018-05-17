@@ -12,6 +12,8 @@
 		4D0175E320AD26E6005873CC /* GameRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0175E220AD26E6005873CC /* GameRecordsViewController.swift */; };
 		4D0175E520AD28E1005873CC /* GameRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0175E420AD28E1005873CC /* GameRecordCell.swift */; };
 		4D0175E720AD4511005873CC /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0175E620AD4511005873CC /* GameListViewController.swift */; };
+		5ED1946620AD513C00F724AA /* RPSGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED1946520AD513C00F724AA /* RPSGame.storyboard */; };
+		5ED1946820AD518300F724AA /* RPSGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED1946720AD518300F724AA /* RPSGameViewController.swift */; };
 		70DF001B20AD1936004F5BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF001A20AD1936004F5BD0 /* AppDelegate.swift */; };
 		70DF001D20AD1936004F5BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF001C20AD1936004F5BD0 /* ViewController.swift */; };
 		70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DF002120AD1937004F5BD0 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		4D0175E220AD26E6005873CC /* GameRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordsViewController.swift; sourceTree = "<group>"; };
 		4D0175E420AD28E1005873CC /* GameRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordCell.swift; sourceTree = "<group>"; };
 		4D0175E620AD4511005873CC /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		5ED1946520AD513C00F724AA /* RPSGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RPSGame.storyboard; sourceTree = "<group>"; };
+		5ED1946720AD518300F724AA /* RPSGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPSGameViewController.swift; path = "RPS Game/RPSGameViewController.swift"; sourceTree = SOURCE_ROOT; };
 		70DF001720AD1936004F5BD0 /* Starbug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DF001A20AD1936004F5BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70DF001C20AD1936004F5BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				A5CAED6F20AD40F500CD70FA /* Guess.storyboard */,
 				70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */,
 				4D0175DF20AD2633005873CC /* GameRecords.storyboard */,
+				5ED1946520AD513C00F724AA /* RPSGame.storyboard */,
 			);
 			path = Storydoard;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		70DF003120AD1E00004F5BD0 /* RPS Game */ = {
 			isa = PBXGroup;
 			children = (
+				5ED1946720AD518300F724AA /* RPSGameViewController.swift */,
 			);
 			path = "RPS Game";
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 				70DF002520AD1937004F5BD0 /* LaunchScreen.storyboard in Resources */,
 				4D0175E020AD2633005873CC /* GameRecords.storyboard in Resources */,
 				70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */,
+				5ED1946620AD513C00F724AA /* RPSGame.storyboard in Resources */,
 				A5CAED7020AD40F500CD70FA /* Guess.storyboard in Resources */,
 				4D0175DE20AD2117005873CC /* Main.storyboard in Resources */,
 			);
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED1946820AD518300F724AA /* RPSGameViewController.swift in Sources */,
 				70DF001D20AD1936004F5BD0 /* ViewController.swift in Sources */,
 				A5CAED6D20AD3E8E00CD70FA /* Quiz3ViewController.swift in Sources */,
 				4D0175E520AD28E1005873CC /* GameRecordCell.swift in Sources */,
