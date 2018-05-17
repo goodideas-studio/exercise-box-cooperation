@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     // GameOver view
     @IBOutlet weak var gameOverView: UIView!
     @IBOutlet weak var spourtsLabel: UILabel!
-
+    
     @IBAction func restartGame(_ sender: UIButton) {
         
         gameStart = true
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     //RPS Action
     
     @IBAction func RPSAction(_ sender: UIButton) {
-//        print(RPSImage[sender.tag], random)
+        //        print(RPSImage[sender.tag], random)
         if winOrLose == GameRule.win {
             if winGame(playerChoose: RPSImage[sender.tag], computerChoose: random) {
                 imageLeave()
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         self.firstLineImage.center.x = 0
         self.firstLineImage.center.x -= 300
         self.rpsRandom()
-
+        
         imageToCenter()
     }
     
@@ -112,15 +112,15 @@ class ViewController: UIViewController {
         
         
         // Do any additional setup after loading the view, typically from a nib.
-
-       
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func imageToCenter() {
         UIView.animate(withDuration: 0.4) {
             self.firstLineImage.center = self.gameView.center
@@ -187,13 +187,13 @@ class ViewController: UIViewController {
     func gameOver() {
         
         let date = getTime()
-//        let rpsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
+        //        let rpsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
         let rpsGameRecord = ["title": "RPS Game", "score": player.score, "date": date] as [String : Any]
         if gameStart {
             gameArray.append(rpsGameRecord)
         }
-//
-//        print("UserDefaults：\(UserDefaults.standard.value(forKey: "playRecord")!)")
+        //
+        //        print("UserDefaults：\(UserDefaults.standard.value(forKey: "playRecord")!)")
         
         gameTimer.invalidate()
         
@@ -204,7 +204,7 @@ class ViewController: UIViewController {
             highScoreLabel.text = "High Score：\(highScore)"
         }
         
-       
+        
         
         
         UIView.animate(withDuration: 1) {
@@ -237,8 +237,8 @@ class ViewController: UIViewController {
         
         let dformatter = DateFormatter()
         dformatter.dateFormat = "yyyy/MM/dd/ HH:mm"
-//        print("当前日期时间：\(dformatter.string(from: now))")
-
+        //        print("当前日期时间：\(dformatter.string(from: now))")
+        
         let date = dformatter.string(from: now)
         
         return date
@@ -246,11 +246,11 @@ class ViewController: UIViewController {
     
     //
     
-  @IBAction func goBack(_ sender: Any) {
-    self.dismiss(animated: true, completion: nil)
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        
+        UserDefaults.standard.set(gameArray, forKey: "StarBug")
+    }
     
-    UserDefaults.standard.set(gameArray, forKey: "rpsGameArray")
-  }
-  
 }
 
