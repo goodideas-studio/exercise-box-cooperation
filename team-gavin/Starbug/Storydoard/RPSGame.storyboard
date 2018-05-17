@@ -145,7 +145,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RPS Little Game" id="yk0-6q-wVm"/>
+                    <navigationItem key="navigationItem" title="RPS Little Game" id="yk0-6q-wVm">
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="Zo1-f8-BZL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="goBack:" destination="BYZ-38-t0r" id="rMZ-6u-wtL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstLineImage" destination="bCR-Zx-2ab" id="yNW-y0-LBm"/>
                         <outlet property="gameOverView" destination="wVY-BD-en4" id="cYh-Ln-hxl"/>
@@ -178,6 +185,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WPN-N1-2co">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

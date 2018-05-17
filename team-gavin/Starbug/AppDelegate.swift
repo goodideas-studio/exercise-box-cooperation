@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     launchedTimes += 1
     UserDefaults.setAppLaunchTimes(round: launchedTimes)
     print(launchedTimes)
-    if launchedTimes == 35 {
+    if launchedTimes == 1 {
       UserDefaults.setCoinsLeft(score: 1000)
     }
     return true
