@@ -57,6 +57,8 @@ class TapStarbucksViewController: UIViewController {
     @IBAction func playAgainButton(_ sender: Any) {
         
         UserDefaults.standard.set(Record.current.spentCoin(spendCoin: 100), forKey: "coin")
+//        Record.current.gameOneTimes += 1
+//        UserDefaults.standard.set(Record.current.gameOneTimes, forKey: "gameOneTimes")
         resetGame()
         tapStarbucksTimer = Timer.scheduledTimer(timeInterval: 1 , target: self , selector: #selector( gameTimerCountDown ), userInfo: nil , repeats: true )
         coverView.isHidden = true
@@ -66,7 +68,8 @@ class TapStarbucksViewController: UIViewController {
     func resetGame() {
         Record.current.gameOneTimes += 1
         UserDefaults.standard.set(Record.current.gameOneTimes, forKey: "gameOneTimes")
-        
+        print(UserDefaults.standard.integer(forKey: "gameOneTimes"))
+        print("max: \(UserDefaults.standard.integer(forKey: "gameOneScore"))")
         timeCount = monster.gameTime
         timerLabel.text = "時間剩下：\(timeCount)秒"
         monsterIndex = 0
@@ -127,7 +130,7 @@ class TapStarbucksViewController: UIViewController {
         } else {
             tapStarbucksTimer.invalidate()
             timeCount = monster.gameTime
-            UserDefaults.standard.set(score, forKey: "gameOneScore")
+            UserDefaults.standard.set(max(score, Record.current.gameOneScore), forKey: "gameOneScore")
             coverView.isHidden = false
             gameEndLabel.text = "時間到了！"
         }
@@ -149,9 +152,6 @@ class TapStarbucksViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-
-        resetGame()
-        
     }
 
     override func didReceiveMemoryWarning() {
