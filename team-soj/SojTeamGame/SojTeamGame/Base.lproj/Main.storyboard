@@ -180,6 +180,7 @@
                     <connections>
                         <outlet property="gameListTableView" destination="HvO-GF-qRZ" id="9AC-k5-bFA"/>
                         <segue destination="Yfd-WC-yIC" kind="show" identifier="performTapStarbucks" id="pG2-bX-hFL"/>
+                        <segue destination="dra-5S-jIN" kind="show" identifier="performBlackJacks" id="C6F-c4-1iW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMy-7z-5ZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +225,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分數" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws5-vh-iTF">
-                                                            <rect key="frame" x="304" y="8" width="73" height="21"/>
+                                                            <rect key="frame" x="276" y="8" width="101" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,6 +289,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0b3-H7-quC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2788" y="193"/>
+        </scene>
+        <!--PokerGame-->
+        <scene sceneID="jcw-k6-K4M">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PokerGame" id="dra-5S-jIN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQ6-pd-uHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2935" y="-445"/>
         </scene>
         <!--QRCodeStoryboard-->
         <scene sceneID="V1f-r8-0mw">

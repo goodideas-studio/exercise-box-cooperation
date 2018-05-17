@@ -24,6 +24,8 @@
 		D6AA702220AD67AE001B3F91 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701E20AD67AE001B3F91 /* testViewController.swift */; };
 		D6AA702320AD67AE001B3F91 /* TapStarbucksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */; };
 		D6AA702520AD6812001B3F91 /* QRCodeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */; };
+		D6AA702920AD811F001B3F91 /* PokerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA702820AD811E001B3F91 /* PokerGame.storyboard */; };
+		D6AA702B20AD8146001B3F91 /* BlackJackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */; };
 		E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969520AD66E100B1BF41 /* DeviceInput.swift */; };
 		E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969620AD66E100B1BF41 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		D6AA701E20AD67AE001B3F91 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		D6AA701F20AD67AE001B3F91 /* TapStarbucksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapStarbucksModel.swift; sourceTree = "<group>"; };
 		D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeStoryboard.storyboard; sourceTree = "<group>"; };
+		D6AA702820AD811E001B3F91 /* PokerGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PokerGame.storyboard; sourceTree = "<group>"; };
+		D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackJackVC.swift; sourceTree = "<group>"; };
 		E020969520AD66E100B1BF41 /* DeviceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInput.swift; sourceTree = "<group>"; };
 		E020969620AD66E100B1BF41 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 				D6AA700D20AD2500001B3F91 /* Controllers */,
 				D6AA6FF620AD1A1F001B3F91 /* Main.storyboard */,
 				D6AA702420AD6812001B3F91 /* QRCodeStoryboard.storyboard */,
+				D6AA702820AD811E001B3F91 /* PokerGame.storyboard */,
 				D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */,
 				D6AA6FFB20AD1A20001B3F91 /* LaunchScreen.storyboard */,
 				D6AA6FFE20AD1A20001B3F91 /* Info.plist */,
@@ -111,6 +116,7 @@
 		D6AA700D20AD2500001B3F91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */,
 				D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */,
 				D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */,
 				D6AA701020AD38ED001B3F91 /* GameListViewController.swift */,
@@ -200,6 +206,7 @@
 				D6AA702520AD6812001B3F91 /* QRCodeStoryboard.storyboard in Resources */,
 				D6AA702020AD67AE001B3F91 /* TapStarbucks.storyboard in Resources */,
 				D6AA6FFA20AD1A20001B3F91 /* Assets.xcassets in Resources */,
+				D6AA702920AD811F001B3F91 /* PokerGame.storyboard in Resources */,
 				D6AA6FF820AD1A1F001B3F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +221,7 @@
 				D6AA6FF520AD1A1F001B3F91 /* MenuViewController.swift in Sources */,
 				D6AA701420AD39A1001B3F91 /* Game.swift in Sources */,
 				E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */,
+				D6AA702B20AD8146001B3F91 /* BlackJackVC.swift in Sources */,
 				D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */,
 				D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */,
 				E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */,

@@ -64,7 +64,13 @@ extension GameListViewController: UITableViewDelegate, UITableViewDataSource{
         case GameChoice.blackJack.rawValue:
             if Record.current.coin >= 100{
                 Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
+                performSegue(withIdentifier: "performBlackJacks", sender: nil)
                 print("剩下錢",Record.current.coin)
+            }else{
+                let alert = UIAlertController(title: "錢不夠", message: "去儲值", preferredStyle: .alert)
+                let action = UIAlertAction(title: "確定", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
             }
             
         default:
