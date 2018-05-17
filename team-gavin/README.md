@@ -41,7 +41,7 @@
 ![Alt text](Team_Starbug.gif)
 
 ### 開始 / 結束畫面
-![Alt text](Game_Start)
+![Alt text](Game_Start.png)
 
 
 
