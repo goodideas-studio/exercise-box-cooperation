@@ -56,12 +56,12 @@
 		70DF001920AD1936004F5BD0 /* Starbug */ = {
 			isa = PBXGroup;
 			children = (
+				70DF003020AD1DE7004F5BD0 /* Games */,
+				70DF002F20AD1DCE004F5BD0 /* Storydoard */,
 				70DF002C20AD1AA2004F5BD0 /* Extension */,
 				70DF001A20AD1936004F5BD0 /* AppDelegate.swift */,
 				70DF001C20AD1936004F5BD0 /* ViewController.swift */,
-				70DF001E20AD1936004F5BD0 /* Main.storyboard */,
 				70DF002120AD1937004F5BD0 /* Assets.xcassets */,
-				70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */,
 				70DF002620AD1937004F5BD0 /* Info.plist */,
 			);
 			path = Starbug;
@@ -73,6 +73,30 @@
 				70DF002D20AD1AD1004F5BD0 /* UserDefaults.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		70DF002F20AD1DCE004F5BD0 /* Storydoard */ = {
+			isa = PBXGroup;
+			children = (
+				70DF001E20AD1936004F5BD0 /* Main.storyboard */,
+				70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */,
+			);
+			path = Storydoard;
+			sourceTree = "<group>";
+		};
+		70DF003020AD1DE7004F5BD0 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				70DF003120AD1E00004F5BD0 /* RPSGame */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		70DF003120AD1E00004F5BD0 /* RPSGame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RPSGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
