@@ -17,8 +17,6 @@ class ResultViewController: UIViewController {
     
     var highestScore:Int?
     
-    
-    
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var restartOutlet: UIButton!
     

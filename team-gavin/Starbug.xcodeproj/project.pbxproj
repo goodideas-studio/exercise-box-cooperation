@@ -14,6 +14,7 @@
 		4D0175E720AD4511005873CC /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0175E620AD4511005873CC /* GameListViewController.swift */; };
 		5ED1946620AD513C00F724AA /* RPSGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED1946520AD513C00F724AA /* RPSGame.storyboard */; };
 		5ED1946820AD518300F724AA /* RPSGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED1946720AD518300F724AA /* RPSGameViewController.swift */; };
+		5ED1946A20AD536400F724AA /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED1946920AD536400F724AA /* PlayerModel.swift */; };
 		70DF001B20AD1936004F5BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF001A20AD1936004F5BD0 /* AppDelegate.swift */; };
 		70DF001D20AD1936004F5BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF001C20AD1936004F5BD0 /* ViewController.swift */; };
 		70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DF002120AD1937004F5BD0 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		4D0175E620AD4511005873CC /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		5ED1946520AD513C00F724AA /* RPSGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RPSGame.storyboard; sourceTree = "<group>"; };
 		5ED1946720AD518300F724AA /* RPSGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPSGameViewController.swift; path = "RPS Game/RPSGameViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5ED1946920AD536400F724AA /* PlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerModel.swift; path = "RPS Game/PlayerModel.swift"; sourceTree = SOURCE_ROOT; };
 		70DF001720AD1936004F5BD0 /* Starbug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DF001A20AD1936004F5BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70DF001C20AD1936004F5BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		70DF003120AD1E00004F5BD0 /* RPS Game */ = {
 			isa = PBXGroup;
 			children = (
+				5ED1946920AD536400F724AA /* PlayerModel.swift */,
 				5ED1946720AD518300F724AA /* RPSGameViewController.swift */,
 			);
 			path = "RPS Game";
@@ -242,6 +245,7 @@
 				4D0175E520AD28E1005873CC /* GameRecordCell.swift in Sources */,
 				A5CAED6B20AD3E8E00CD70FA /* GuessViewController.swift in Sources */,
 				A5CAED6A20AD3E8E00CD70FA /* Quiz2ViewController.swift in Sources */,
+				5ED1946A20AD536400F724AA /* PlayerModel.swift in Sources */,
 				4D0175E320AD26E6005873CC /* GameRecordsViewController.swift in Sources */,
 				A5CAED6C20AD3E8E00CD70FA /* HomeViewController.swift in Sources */,
 				A5CAED6E20AD3E8E00CD70FA /* Quiz1ViewController.swift in Sources */,

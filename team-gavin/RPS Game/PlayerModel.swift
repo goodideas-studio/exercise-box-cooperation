@@ -23,16 +23,17 @@ struct UserDefaultKey {
     static let playGuessCount = "guessCount"
 }
 
+
+// Game Struct
+
 struct PlayRecord {
     
-    let playCount:Int
-    let gameItem:String
+    let gameTitle:String
     let score:Int
     let date:Date
     
-    init(playCount:Int,gameItem:String,score:Int,date:Date) {
-        self.playCount = playCount
-        self.gameItem = gameItem
+    init(title:String,score:Int,date:Date) {
+        self.gameTitle = title
         self.score = score
         self.date = date
     }
