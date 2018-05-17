@@ -35,9 +35,11 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func restartButton(_ sender: UIButton) {
+        let date = getTime()
+      
+        let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: date)
+      
         scoreForResult = 0
-        let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: <#T##Date#>)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

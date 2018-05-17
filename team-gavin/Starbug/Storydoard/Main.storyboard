@@ -63,6 +63,9 @@
                                 <state key="normal" title="儲值">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="P6I-u2-fEa" kind="show" id="ruX-1d-gpL"/>
+                                </connections>
                             </button>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybg-dk-HXg">
                                 <rect key="frame" x="60" y="144" width="255" height="160"/>
@@ -249,6 +252,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCt-YK-dIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1774" y="358"/>
+        </scene>
+        <!--QRCode-->
+        <scene sceneID="ylh-Fr-Tca">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRCode" id="P6I-u2-fEa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apA-0z-dsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="425"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cna-cc-WIC">
