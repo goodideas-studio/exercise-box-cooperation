@@ -39,6 +39,11 @@ class ResultViewController: UIViewController {
       
         let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: date)
       
+        let storyBoard = UIStoryboard(name: "GameRecords", bundle: nil)
+        
+        if let recordVC = storyBoard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
+            recordVC.gameRecordArray.append(guessGameRecord)
+        }
         scoreForResult = 0
     }
     

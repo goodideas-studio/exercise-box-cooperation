@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="181" y="-2701"/>
         </scene>
-        <!--Playground-->
+        <!--Guess-->
         <scene sceneID="sZT-5t-rus">
             <objects>
                 <viewController id="gC6-I6-qqk" customClass="HomeViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,7 +176,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sHT-NM-CUC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Playground" id="kru-hG-aIm">
+                    <navigationItem key="navigationItem" title="Guess" id="kru-hG-aIm">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Drz-ZV-Xtx">
                             <connections>
                                 <action selector="backButtonPressed:" destination="gC6-I6-qqk" id="nx9-ol-mit"/>
