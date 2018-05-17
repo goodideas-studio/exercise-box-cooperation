@@ -29,11 +29,13 @@ class Record{
     
     func addCoin(addCoin: Int)->Int {
         self.coin += addCoin
+        UserDefaults.standard.set(self.coin, forKey: "coin")
         return self.coin
     }
     
     func spentCoin(spendCoin: Int)->Int {
         self.coin -= spendCoin
+        UserDefaults.standard.set(self.coin, forKey: "coin")
         return self.coin
     }
     
