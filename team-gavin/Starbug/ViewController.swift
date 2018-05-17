@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewCOntroller: UIViewController {
+  @IBOutlet weak var APPLaunchedTimesCountLabel: UILabel!
+  @IBOutlet weak var APPPlayedTimesLabel: UILabel!
+  
+  @IBOutlet weak var tokenRemainingLabel: UILabel!
+  let userdefaults = UserDefaults.standard
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+  var launchedTimes = userdefaults.integer(forKey: UserDefaults.Keys.appLaunchTimes)
+    APPLaunchedTimesCountLabel.text = "APP 被打開\(launchedTimes)次"
   }
 
   override func didReceiveMemoryWarning() {
