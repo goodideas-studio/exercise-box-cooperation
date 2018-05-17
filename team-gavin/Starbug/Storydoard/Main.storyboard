@@ -146,7 +146,7 @@
         <!--遊戲列表-->
         <scene sceneID="XuP-Qp-nnN">
             <objects>
-                <viewController id="yUz-Zb-gFy" sceneMemberID="viewController">
+                <viewController id="yUz-Zb-gFy" customClass="GameListViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Voh-t4-Vas">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
