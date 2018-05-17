@@ -187,16 +187,13 @@ class ViewController: UIViewController {
         let date = getTime()
         let rpsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let tableViewController = storyboard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
-            tableViewController.gameRecordArray.append(rpsRecord)
+        if gameStart {
+            let storyboard = UIStoryboard(name: "GameRecords", bundle: nil)
+            if let tableViewController = storyboard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
+                print("傳值")
+                tableViewController.gameRecordArray.append(rpsRecord)
+            }
         }
-        
-        
-        
-//        if gameStart {
-//            UserDefaults.standard.set(recordDic, forKey: "playRecord")
-//        }
 //
 //        print("UserDefaults：\(UserDefaults.standard.value(forKey: "playRecord")!)")
         
