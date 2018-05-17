@@ -50,12 +50,23 @@ extension GameListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case GameChoice.tapStarbucks.rawValue:
-            Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
-            performSegue(withIdentifier: "performTapStarbucks", sender: nil)
-            print("剩下錢",Record.current.coin)
+            if Record.current.coin >= 100{
+//                Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
+                performSegue(withIdentifier: "performTapStarbucks", sender: nil)
+                print("剩下錢",Record.current.coin)
+            }else{
+                let alert = UIAlertController(title: "錢不夠", message: "去儲值", preferredStyle: .alert)
+                let action = UIAlertAction(title: "確定", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+            
         case GameChoice.blackJack.rawValue:
-            Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
-            print("剩下錢",Record.current.coin)
+            if Record.current.coin >= 100{
+                Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
+                print("剩下錢",Record.current.coin)
+            }
+            
         default:
             break
         }

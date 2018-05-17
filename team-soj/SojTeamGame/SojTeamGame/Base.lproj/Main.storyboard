@@ -179,6 +179,7 @@
                     <navigationItem key="navigationItem" title="遊戲列表" id="Ltz-K5-aps"/>
                     <connections>
                         <outlet property="gameListTableView" destination="HvO-GF-qRZ" id="9AC-k5-bFA"/>
+                        <segue destination="Yfd-WC-yIC" kind="show" identifier="performTapStarbucks" id="pG2-bX-hFL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMy-7z-5ZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -223,7 +224,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分數" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws5-vh-iTF">
-                                                            <rect key="frame" x="320" y="8" width="35" height="21"/>
+                                                            <rect key="frame" x="304" y="8" width="73" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -274,12 +275,11 @@
                     <navigationItem key="navigationItem" title="遊戲紀錄" id="HWp-El-ELm"/>
                     <connections>
                         <outlet property="recordTableView" destination="dGH-bR-KAX" id="Vrb-eU-d0E"/>
-                        <segue destination="Yfd-WC-yIC" kind="show" identifier="performTapStarbucks" id="ESA-xK-f9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uaz-T3-fNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2013" y="283"/>
+            <point key="canvasLocation" x="2011.594202898551" y="282.88043478260875"/>
         </scene>
         <!--TapStarbucks-->
         <scene sceneID="5QU-wL-QMQ">

@@ -17,6 +17,7 @@ class RecordViewController: UIViewController {
         recordTableView.delegate = self
         recordTableView.dataSource = self
         recordTableView.separatorStyle = .none
+        print(Record.current.recordGameScore)
         // Do any additional setup after loading the view.
     }
 
@@ -31,12 +32,15 @@ extension RecordViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        let totalGameTimes = Record.current.gameOneTimes + Record.current.gameTwoTimes
 //        return totalGameTimes
-        return 1
+        return Record.current.recordGameName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let recordCell = tableView.dequeueReusableCell(withIdentifier: "RecordCell", for: indexPath) as! RecordTableViewCell
-//        recordCell.updateCellUI(order: <#T##Int#>, gameName: <#T##String#>, score: <#T##Int#>, time: <#T##String#>)
+        recordCell.gameNameLabel.text = Record.current.recordGameName[indexPath.row]
+        recordCell.orderLabel.text = "\(indexPath.row + 1)"
+        recordCell.scoreLabel.text = "分數\(Record.current.recordGameScore[indexPath.row])分"
+        recordCell.timeLabel.text = "\(Record.current.recordGameDate[indexPath.row])"
         return recordCell
     }
     

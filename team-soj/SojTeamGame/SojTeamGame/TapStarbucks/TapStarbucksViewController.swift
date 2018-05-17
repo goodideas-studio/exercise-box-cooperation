@@ -46,7 +46,15 @@ class TapStarbucksViewController: UIViewController {
             score += monster.monsterMaxHP[monsterIndex-1]
             monsterIndex += 1
             scoreLabel.text = "分數: \(score)"
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy年M月d日 H:m"
+            let dateString = dateFormatter.string(from: Date())
+            
             UserDefaults.standard.set(max(score, Record.current.gameOneScore), forKey: "gameOneScore")
+            Record.current.addRecordGame(gameName: "tapStarbucks")
+            Record.current.addRecordScore(gameScore: score)
+            Record.current.addRecordDate(gameDate: dateString)
             coverView.isHidden = false
             tapStarbucksTimer.invalidate()
             gameEndLabel.text = "You Win!!"
@@ -130,7 +138,15 @@ class TapStarbucksViewController: UIViewController {
         } else {
             tapStarbucksTimer.invalidate()
             timeCount = monster.gameTime
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy年M月d日 H:m"
+            let dateString = dateFormatter.string(from: Date())
+            
             UserDefaults.standard.set(max(score, Record.current.gameOneScore), forKey: "gameOneScore")
+            Record.current.addRecordGame(gameName: "tapStarbucks")
+            Record.current.addRecordScore(gameScore: score)
+            Record.current.addRecordDate(gameDate: dateString)
             coverView.isHidden = false
             gameEndLabel.text = "時間到了！"
         }

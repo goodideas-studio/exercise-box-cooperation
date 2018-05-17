@@ -25,13 +25,35 @@ class Record{
     
     var gameOneDates: [String] = UserDefaults.standard.array(forKey: "gameOneDates") == nil ? [] : UserDefaults.standard.array(forKey: "gameOneDates") as! [String]
     
+    var recordGameName:[String] = UserDefaults.standard.array(forKey: "recordGameName") == nil ? [] : UserDefaults.standard.array(forKey: "recordGameName") as! [String]
+    
+    func addRecordGame(gameName:String){
+        recordGameName.append(gameName)
+        UserDefaults.standard.set(recordGameName, forKey: "recordGameName")
+    }
+    
     var gameTwoDates: [String] = UserDefaults.standard.array(forKey: "gameTwoDates") == nil ? [] : UserDefaults.standard.array(forKey: "gameTwoDates") as! [String]
+    
+    var recordGameDate: [String] = UserDefaults.standard.array(forKey: "recordGameDate") == nil ? [] : UserDefaults.standard.array(forKey: "recordGameDate") as! [String]
+    
+    var recordGameScore:[Int] = UserDefaults.standard.array(forKey: "recordGameScore") == nil ? [] : UserDefaults.standard.array(forKey: "recordGameScore") as! [Int]
+    
+    func addRecordScore(gameScore:Int){
+        recordGameScore.append(gameScore)
+        UserDefaults.standard.set(recordGameScore, forKey: "recordGameScore")
+    }
+    
+    func addRecordDate(gameDate:String){
+        recordGameDate.append(gameDate)
+        UserDefaults.standard.set(recordGameDate, forKey: "recordGameDate")
+    }
     
     func addCoin(addCoin: Int)->Int {
         self.coin += addCoin
         UserDefaults.standard.set(self.coin, forKey: "coin")
         return self.coin
     }
+    
     
     func spentCoin(spendCoin: Int)->Int {
         self.coin -= spendCoin
