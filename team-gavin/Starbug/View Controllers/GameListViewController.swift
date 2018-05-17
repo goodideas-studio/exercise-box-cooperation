@@ -21,6 +21,9 @@ class GameListViewController: UIViewController {
     } else {
       goRPSGameBtn.isEnabled = true
       goGuessGameBtn.isEnabled = true
+      var guessGameRounds = UserDefaults.getGuessGameRound()
+      guessGameRounds += 1
+      UserDefaults.setGuessGameRound(score: guessGameRounds)
       tempCoinsRemaining -= 100
     }
     print(tempCoinsRemaining)
@@ -37,6 +40,9 @@ class GameListViewController: UIViewController {
       goRPSGameBtn.isEnabled = true
       goGuessGameBtn.isEnabled = true
       tempCoinsRemaining -= 100
+      var rpsGameRounds = UserDefaults.getRpsGameRounds()
+      rpsGameRounds += 1
+      UserDefaults.setRpsGameRounds(score: rpsGameRounds)
     }
     UserDefaults.setCoinsLeft(score: tempCoinsRemaining)
   }
