@@ -27,7 +27,11 @@ class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         //    let array = UserDefaults.standard.array(forKey: "rpsGameArray") as! [Any]
+        guard let array = UserDefaults.standard.array(forKey: "StarBug")  else {
+            return
+        }
         gameRecordArray = UserDefaults.standard.array(forKey: "StarBug") as! [[String : Any]]
+        UserDefaults.standard.set(nil, forKey: "StarBug")
         print(gameRecordArray)
         
         totalArray += gameRecordArray
