@@ -15,7 +15,7 @@
         <!--Let's find out-->
         <scene sceneID="mmx-gy-A0K">
             <objects>
-                <viewController id="qVF-Kt-xoI" customClass="GuessViewController" customModule="starBug_Morris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qVF-Kt-xoI" customClass="GuessViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVF-BV-Ilb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
         <!--Playground-->
         <scene sceneID="sZT-5t-rus">
             <objects>
-                <viewController id="gC6-I6-qqk" customClass="HomeViewController" customModule="starBug_Morris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gC6-I6-qqk" customClass="HomeViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SLi-WM-yCX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +176,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sHT-NM-CUC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Playground" id="kru-hG-aIm"/>
+                    <navigationItem key="navigationItem" title="Playground" id="kru-hG-aIm">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Drz-ZV-Xtx">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="gC6-I6-qqk" id="nx9-ol-mit"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="guessOutlet" destination="mDr-X9-XZo" id="4yb-ss-WvQ"/>
                         <outlet property="guessScoreLabel" destination="L5V-kE-14f" id="B77-xP-yDh"/>
@@ -191,7 +197,7 @@
         <!--Quiz1-->
         <scene sceneID="CCT-b9-Rea">
             <objects>
-                <viewController id="OCH-hi-bWn" customClass="Quiz1ViewController" customModule="starBug_Morris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OCH-hi-bWn" customClass="Quiz1ViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7f9-wh-5Qx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,7 +332,7 @@
         <!--Quiz2-->
         <scene sceneID="009-ZQ-Rrw">
             <objects>
-                <viewController id="rfh-Q6-tzp" customClass="Quiz2ViewController" customModule="starBug_Morris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rfh-Q6-tzp" customClass="Quiz2ViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0dd-89-LgG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,7 +429,7 @@
         <!--Quiz3-->
         <scene sceneID="uEY-CZ-Pt5">
             <objects>
-                <viewController id="B3V-NW-OSe" customClass="Quiz3ViewController" customModule="starBug_Morris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B3V-NW-OSe" customClass="Quiz3ViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kV2-4l-jWt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -529,7 +535,7 @@
         <!--Result-->
         <scene sceneID="oHI-sn-qAj">
             <objects>
-                <viewController id="FNw-Tt-4Vp" customClass="ResultViewController" customModule="starBug_Morris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FNw-Tt-4Vp" customClass="ResultViewController" customModule="Starbug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NNE-EH-INY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
