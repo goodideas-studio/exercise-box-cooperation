@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    //var appLaunchedTime = UserDefaults.Keys.appLaunchTimes.
+    var launchedTimes = UserDefaults.getAppLaunchTimes()
+    launchedTimes += 1
+    UserDefaults.setAppLaunchTimes(round: launchedTimes)
+    print(launchedTimes)
+    if launchedTimes == 1 {
+      UserDefaults.setCoinsLeft(score: 1000)
+    }
     return true
   }
 
