@@ -1,4 +1,5 @@
 # 訓練盒 - 合作
+![BuyMeStarbucks](readme/buy-me-starbucks.png)
 
 挑戰日期： 2018年5月17日
 
@@ -74,7 +75,8 @@ Members：Jeremy / Iris / Ells / Gavin / 菘駿 / Morris / Ethan / Sonny
 - 如果相機中出現的 QRCode 不符合上面的格式，直接忽略即可。
 - 如果掃描到指定的格式，則跳回「儲值」介面並跳出成功提示。
 
-### QRCode 例子
+## QRCode 例子
+
 AppCamp200
 
 ![AppCamp200](readme/AppCamp200.png)
