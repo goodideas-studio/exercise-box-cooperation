@@ -20,20 +20,36 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var session = AVCaptureSession()
     var preViewLayer = AVCaptureVideoPreviewLayer()
     var labeltext: String!
-    var receiptNum8:String = ""
+    var receiptNum7start: String? = ""
+    var receiptNum3:String = ""
+    var output = AVCaptureMetadataOutput()
+    var deviceInput = DeviceInput()
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        session.addInput(deviceInput.backWildAngeCamera!)
+        session.addOutput(output)
+        output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+        //dump(output.availableMetadataObjectTypes)
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.global())
+        
+        session.startRunning()
     }
 
     override func viewWillLayoutSubviews() {
         //顯示掃描內容 label
         layoutSetting()
-        
         //顯示掃描 QRCode 預覽畫面
         settingPreviewLayer()
+        
+
+        
+        
+        
+        
     }
     
     
@@ -60,7 +76,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         codeLabel.textAlignment = .center
         
         //顯示"金額" label
-        CoinLabel.frame = CGRect(x: ((fullSize.width-300)/2), y: 480, width: 80, height: 40)
+        CoinLabel.frame = CGRect(x: ((fullSize.width-300)/2), y: 480, width: 150, height: 40)
         CoinLabel.backgroundColor = UIColor.clear
         CoinLabel.layer.borderColor = UIColor.gray.cgColor
         CoinLabel.layer.borderWidth = 2
@@ -68,11 +84,11 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         CoinLabel.font = UIFont.systemFont(ofSize: 24)
         CoinLabel.textAlignment = NSTextAlignment.center
         CoinLabel.numberOfLines = 2
-        CoinLabel.text = "金額"
+        CoinLabel.text = "現有金額"
         CoinLabel.textAlignment = .center
         
-        ////顯示 "儲值金額" label
-        showCoinLabel.frame = CGRect(x: ((fullSize.width-300)/2 + 100), y: 480, width: 200, height: 40)
+        ////顯示 "現有金額" label
+        showCoinLabel.frame = CGRect(x: ((fullSize.width-300)/2 + 180), y: 480, width: 120, height: 40)
         showCoinLabel.backgroundColor = UIColor.clear
         showCoinLabel.layer.borderColor = UIColor.gray.cgColor
         showCoinLabel.layer.borderWidth = 2
@@ -80,7 +96,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         showCoinLabel.font = UIFont.systemFont(ofSize: 24)
         showCoinLabel.textAlignment = NSTextAlignment.center
         showCoinLabel.numberOfLines = 2
-        showCoinLabel.text = "appCoin:400"
+        showCoinLabel.text = "\(Record.current.coin)"
         showCoinLabel.textAlignment = .center
         
         
@@ -134,10 +150,12 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                     self.qrCodeFrameView.frame = barCodeObject!.bounds
                     self.preViewLayer.borderWidth = 4
                     self.preViewLayer.borderColor = UIColor.green.cgColor
-//                    self.labeltext = data.stringValue
+                    //將掃描到的 QRcode 資料丟到 labeltext
+                    self.labeltext = data.stringValue
+                    print("labeltext : \(self.labeltext)")
                     
 //                    self.apiDecode()
-//                    labelTextSetting()
+                    self.labelTextSetting()
                     
                 }
             }
@@ -146,22 +164,72 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 
     }
     
+    //顯示掃描資料到對應 label
     func labelTextSetting() {
-        let receiptNum2start = String(labeltext.prefix(7))
-        //                    let receiptNum2start = labeltext.index(labeltext.startIndex,offsetBy:0)
-        //                    let receiptNum2end = labeltext.index(receiptNum2start, offsetBy:2)
-        //                    let receiptNum2 = String(labeltext[ receiptNum2start ..< receiptNum2end ])
-        let receiptNum8start = labeltext.index(labeltext.startIndex, offsetBy:2)
-        let receiptNum8end = labeltext.index(receiptNum8start, offsetBy:8)
-        //                    let range2to8 = receiptNum8start..<receiptNum8end
-        //                    receiptNum8 = String(labeltext[range2to8])
-        receiptNum8 = String(labeltext[ receiptNum8start ..< receiptNum8end])
-        codeLabel.text = (" 發票號碼: " + receiptNum2start + " - " + receiptNum8 )
-//        typeLabel.textColor = UIColor.red
-//        typeLabel.text = comparemsg
         
+        //擷取 QRcode 內容並分段
+        let receiptNum10start = String(labeltext.prefix(10))
+        receiptNum7start = String(labeltext.prefix(7))
+        
+        let receiptNum3start = labeltext.index(labeltext.startIndex, offsetBy:7)
+        let receiptNum3end = labeltext.index(receiptNum3start, offsetBy:3)
+        receiptNum3 = String(labeltext[ receiptNum3start ..< receiptNum3end])
+        
+        //顯示 QRcode 內容
+        codeLabel.text = receiptNum7start
+        showCoinLabel.text = receiptNum3
+
+        comparemetadata()
+        
+//        typeLabel.textColor = UIColor.red
+
     }//end of labelTextSetting()
+ 
     
+    
+    func comparemetadata() {
+        if receiptNum7start == "AppCamp" {
+//            session.stopRunning()
+            print("the metadata is correct")
+            popokAlert()
+
+        }
+    }//end of comparemetadata
+    
+//    func popokAlert() {
+//
+//
+//        self.view.addSubview(okAlert)
+//
+//
+//    }//end of popAlert
+    
+    
+    @objc func popokAlert() {
+        // 建立一個提示框
+        let alertController = UIAlertController(
+            title: "恭喜",
+            message: "成功儲值 \(receiptNum3)，按下確認返回",
+            preferredStyle: .alert)
+        
+        // 建立[確認]按鈕
+        let okAction = UIAlertAction(
+            title: "回前頁",
+            style: .default,
+            handler: {
+                (action: UIAlertAction!) -> Void in
+                Record.current.addCoin(addCoin: Int(self.receiptNum3)!)
+                print(Record.current.coin)
+                print("按下確認後，閉包裡的動作")
+        })
+        alertController.addAction(okAction)
+        
+        // 顯示提示框
+        self.present(
+            alertController,
+            animated: true,
+            completion: nil)
+    }
     
 }//end of Class
 
