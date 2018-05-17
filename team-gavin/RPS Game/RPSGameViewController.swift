@@ -188,6 +188,8 @@ class ViewController: UIViewController {
         let rgsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
         
         
+        
+        
 //        if gameStart {
 //            UserDefaults.standard.set(recordDic, forKey: "playRecord")
 //        }

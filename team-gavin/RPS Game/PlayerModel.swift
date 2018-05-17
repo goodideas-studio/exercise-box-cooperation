@@ -23,7 +23,6 @@ struct UserDefaultKey {
     static let playGuessCount = "guessCount"
 }
 
-
 // Game Struct
 
 struct PlayRecord {
