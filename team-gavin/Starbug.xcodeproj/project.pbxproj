@@ -125,9 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				70DF005D20AD63E8004F5BD0 /* QRCode.storyboard */,
-				4D0175DD20AD2116005873CC /* Main.storyboard */,
 				A5CAED6F20AD40F500CD70FA /* Guess.storyboard */,
 				70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */,
+				4D0175DD20AD2116005873CC /* Main.storyboard */,
 				4D0175DF20AD2633005873CC /* GameRecords.storyboard */,
 				5ED1946520AD513C00F724AA /* RPSGame.storyboard */,
 			);

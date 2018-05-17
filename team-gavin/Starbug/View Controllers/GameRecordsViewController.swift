@@ -9,6 +9,7 @@ import UIKit
 class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   var gameRecordArray: [PlayRecord] = []
   
+  
   @IBOutlet weak var gameRecordTableView: UITableView!
 
   override func viewDidLoad() {
