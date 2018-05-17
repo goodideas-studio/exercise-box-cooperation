@@ -96,8 +96,9 @@ class ResultViewController: UIViewController {
         
         playRecords.append(guessGameRecord)
         
-        UserDefaults.standard.set(playRecords, forKey: "record2")
-        print(UserDefaults.standard.value(forKey:"record2"))
+        UserDefaults.standard.set(playRecords, forKey: "StarBug")
+        print(UserDefaults.standard.value(forKey:"StarBug"))
+        
         
     }
 

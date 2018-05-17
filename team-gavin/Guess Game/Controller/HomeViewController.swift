@@ -39,10 +39,8 @@ class HomeViewController:UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        questionView.layer.cornerRadius = 10
         
-
+        questionView.layer.cornerRadius = 10
 
         
     }
