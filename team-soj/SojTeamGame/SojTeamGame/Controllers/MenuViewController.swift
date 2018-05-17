@@ -21,13 +21,18 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         appLaunchTimes = UserDefaults.standard.integer(forKey: "appLaunchTimes")
         appLaunchTimes! += 1
         appLaunchTimesLabel.text = "App共開了\(appLaunchTimes!)次"
         UserDefaults.standard.set(appLaunchTimes, forKey: "appLaunchTimes")
         totalGameTimes.text = "一共玩了:\(Record.current.gameOneTimes + Record.current.gameTwoTimes)次"
         coinAmountLabel.text = "\(Record.current.coin)"
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

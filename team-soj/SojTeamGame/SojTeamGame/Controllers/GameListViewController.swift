@@ -48,12 +48,16 @@ extension GameListViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        switch indexPath.row {
-//        case GameChoice.tapStarbucks.rawValue:
-//            performSegue(withIdentifier: "performTheOtherSB", sender: nil)
-//        default:
-//            performSegue(withIdentifier: "performAnotherSB", sender: nil)
-//        }
+        switch indexPath.row {
+        case GameChoice.tapStarbucks.rawValue:
+            Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
+            print("剩下錢",Record.current.coin)
+        case GameChoice.blackJack.rawValue:
+            Record.current.spentCoin(spendCoin: gameList[indexPath.row].coin)
+            print("剩下錢",Record.current.coin)
+        default:
+            break
+        }
     }
     
 }
