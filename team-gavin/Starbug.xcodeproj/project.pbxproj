@@ -20,9 +20,9 @@
 		70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DF002120AD1937004F5BD0 /* Assets.xcassets */; };
 		70DF002520AD1937004F5BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */; };
 		70DF002E20AD1AD1004F5BD0 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF002D20AD1AD1004F5BD0 /* UserDefaults.swift */; };
-		70DF005720AD575E004F5BD0 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DF005520AD575E004F5BD0 /* QRCode.storyboard */; };
 		70DF005B20AD59BD004F5BD0 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF005920AD59BD004F5BD0 /* QRCodeViewController.swift */; };
 		70DF005C20AD59BD004F5BD0 /* PresentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF005A20AD59BD004F5BD0 /* PresentDataViewController.swift */; };
+		70DF005E20AD63E8004F5BD0 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DF005D20AD63E8004F5BD0 /* QRCode.storyboard */; };
 		A5CAED6920AD3E8E00CD70FA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CAED6320AD3E8D00CD70FA /* ResultViewController.swift */; };
 		A5CAED6A20AD3E8E00CD70FA /* Quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CAED6420AD3E8D00CD70FA /* Quiz2ViewController.swift */; };
 		A5CAED6B20AD3E8E00CD70FA /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CAED6520AD3E8D00CD70FA /* GuessViewController.swift */; };
@@ -48,9 +48,9 @@
 		70DF002420AD1937004F5BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70DF002620AD1937004F5BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70DF002D20AD1AD1004F5BD0 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
-		70DF005620AD575E004F5BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../../../Git/QRCode/QRCode/Base.lproj/QRCode.storyboard; sourceTree = "<group>"; };
 		70DF005920AD59BD004F5BD0 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		70DF005A20AD59BD004F5BD0 /* PresentDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentDataViewController.swift; sourceTree = "<group>"; };
+		70DF005D20AD63E8004F5BD0 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		A5CAED6320AD3E8D00CD70FA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = "Guess Game/Controller/ResultViewController.swift"; sourceTree = SOURCE_ROOT; };
 		A5CAED6420AD3E8D00CD70FA /* Quiz2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quiz2ViewController.swift; path = "Guess Game/Controller/Quiz2ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		A5CAED6520AD3E8D00CD70FA /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuessViewController.swift; path = "Guess Game/Controller/GuessViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -124,8 +124,8 @@
 		70DF002F20AD1DCE004F5BD0 /* Storydoard */ = {
 			isa = PBXGroup;
 			children = (
+				70DF005D20AD63E8004F5BD0 /* QRCode.storyboard */,
 				4D0175DD20AD2116005873CC /* Main.storyboard */,
-				70DF005520AD575E004F5BD0 /* QRCode.storyboard */,
 				A5CAED6F20AD40F500CD70FA /* Guess.storyboard */,
 				70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */,
 				4D0175DF20AD2633005873CC /* GameRecords.storyboard */,
@@ -240,8 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70DF005720AD575E004F5BD0 /* QRCode.storyboard in Resources */,
 				70DF002520AD1937004F5BD0 /* LaunchScreen.storyboard in Resources */,
+				70DF005E20AD63E8004F5BD0 /* QRCode.storyboard in Resources */,
 				4D0175E020AD2633005873CC /* GameRecords.storyboard in Resources */,
 				70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */,
 				5ED1946620AD513C00F724AA /* RPSGame.storyboard in Resources */,
@@ -285,14 +285,6 @@
 				70DF002420AD1937004F5BD0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		70DF005520AD575E004F5BD0 /* QRCode.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70DF005620AD575E004F5BD0 /* Base */,
-			);
-			name = QRCode.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
