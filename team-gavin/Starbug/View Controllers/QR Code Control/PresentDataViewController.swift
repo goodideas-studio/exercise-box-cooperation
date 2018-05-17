@@ -24,7 +24,7 @@ class PresentDataViewController: UIViewController {
     if let qrCodeString = qrCodeString {
       let prefixString = qrCodeString.prefix(7)
       
-      if prefixString == "appCamp" {
+      if prefixString == "AppCamp" {
         let filterString = qrCodeString.filter {
           "0123456789".contains($0)
         }
