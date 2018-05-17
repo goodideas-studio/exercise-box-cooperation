@@ -38,11 +38,10 @@
 ------
 
 ### 遊戲畫面
-
+![Alt text](Team_Starbug.gif)
 
 ### 開始 / 結束畫面
-
-
+![Alt text](Game_Start)
 
 
 
