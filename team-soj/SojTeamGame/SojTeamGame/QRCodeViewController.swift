@@ -216,7 +216,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         // 建立[確認]按鈕
         let okAction = UIAlertAction(
-            title: "回前頁",
+            title: "確認",
             style: .default,
             handler: {
                 (action: UIAlertAction!) -> Void in
@@ -224,7 +224,19 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 self.showCoinLabel.text = "\(Record.current.coin)"
                 print(Record.current.coin)
                 print("按下確認後，閉包裡的動作")
+                self.navigationController?.popViewController(animated: true)
         })
+        
+        let cancelAction = UIAlertAction(
+            title: "取消",
+            style: .default,
+            handler: {
+                (action: UIAlertAction!) -> Void in
+//                Record.current.addCoin(addCoin: Int(self.finalText)!)
+                self.showCoinLabel.text = "\(Record.current.coin)"
+                self.navigationController?.popViewController(animated: true)
+        })
+        alertController.addAction(cancelAction)
         alertController.addAction(okAction)
         
         // 顯示提示框

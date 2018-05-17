@@ -157,6 +157,8 @@ class TapStarbucksViewController: UIViewController {
         
         coverView.isHidden = false
         
+        gameEndLabel.text = "Ｗelcome!!"
+        
         monsterImageView.layer.cornerRadius = monsterImageView.bounds.width / 2
         monsterNameLabel.layer.zPosition = 2
         monsterHPLabel.layer.zPosition = 2
