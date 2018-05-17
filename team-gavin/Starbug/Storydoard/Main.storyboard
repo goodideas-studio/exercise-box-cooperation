@@ -177,6 +177,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goRPSGame:" destination="yUz-Zb-gFy" eventType="touchUpInside" id="yAX-ba-vmr"/>
+                                    <segue destination="TWW-8c-Dro" kind="show" id="oD1-QE-5IT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-r3-gWr">
@@ -232,6 +233,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScQ-mo-ZvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2954" y="-40"/>
+        </scene>
+        <!--RPSGame-->
+        <scene sceneID="uks-Qs-bdI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RPSGame" id="TWW-8c-Dro" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJQ-hw-5TH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2971" y="13"/>
         </scene>
         <!--GameRecords-->
         <scene sceneID="Ccf-Ws-cW3">
