@@ -34,9 +34,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="儲值" id="qTR-vO-h1B"/>
+                    <navigationItem key="navigationItem" title="儲值" id="qTR-vO-h1B">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="UYH-Oo-Sy9">
+                            <connections>
+                                <segue destination="bdQ-90-iKQ" kind="unwind" unwindAction="unwindToMainViewController:" id="BUb-fI-dIP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="bdQ-90-iKQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
