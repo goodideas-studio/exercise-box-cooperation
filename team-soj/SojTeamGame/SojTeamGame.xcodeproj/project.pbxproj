@@ -13,18 +13,12 @@
 		D6AA6FFA20AD1A20001B3F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */; };
 		D6AA6FFD20AD1A20001B3F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA6FFB20AD1A20001B3F91 /* LaunchScreen.storyboard */; };
 		D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700420AD1A3B001B3F91 /* Singleton.swift */; };
-<<<<<<< HEAD
-		E074A4E920AD21220081EF84 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E074A4E820AD21220081EF84 /* QRCode.storyboard */; };
-		E074A4EB20AD217F0081EF84 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074A4EA20AD217F0081EF84 /* QRCodeViewController.swift */; };
-		E074A4EE20AD39C30081EF84 /* DeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074A4ED20AD39C30081EF84 /* DeviceInput.swift */; };
-=======
 		D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700620AD21E1001B3F91 /* ButtonStyle.swift */; };
 		D6AA700A20AD24B6001B3F91 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700920AD24B6001B3F91 /* RecordTableViewCell.swift */; };
 		D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */; };
 		D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */; };
 		D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701020AD38ED001B3F91 /* GameListViewController.swift */; };
 		D6AA701420AD39A1001B3F91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701320AD39A1001B3F91 /* Game.swift */; };
->>>>>>> a8be006d51b24156334d21a947f6f72bb93993c4
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,18 +30,12 @@
 		D6AA6FFC20AD1A20001B3F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6AA6FFE20AD1A20001B3F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6AA700420AD1A3B001B3F91 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		E074A4E820AD21220081EF84 /* QRCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
-		E074A4EA20AD217F0081EF84 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		E074A4ED20AD39C30081EF84 /* DeviceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInput.swift; sourceTree = "<group>"; };
-=======
 		D6AA700620AD21E1001B3F91 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		D6AA700920AD24B6001B3F91 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListTableViewCell.swift; sourceTree = "<group>"; };
 		D6AA701020AD38ED001B3F91 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		D6AA701320AD39A1001B3F91 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
->>>>>>> a8be006d51b24156334d21a947f6f72bb93993c4
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +73,6 @@
 				D6AA700820AD2207001B3F91 /* View */,
 				D6AA700D20AD2500001B3F91 /* Controllers */,
 				D6AA6FF620AD1A1F001B3F91 /* Main.storyboard */,
-				E074A4EC20AD398F0081EF84 /* QRCode */,
 				D6AA6FF920AD1A20001B3F91 /* Assets.xcassets */,
 				D6AA6FFB20AD1A20001B3F91 /* LaunchScreen.storyboard */,
 				D6AA6FFE20AD1A20001B3F91 /* Info.plist */,
@@ -93,16 +80,6 @@
 			path = SojTeamGame;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		E074A4EC20AD398F0081EF84 /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				E074A4E820AD21220081EF84 /* QRCode.storyboard */,
-				E074A4EA20AD217F0081EF84 /* QRCodeViewController.swift */,
-				E074A4ED20AD39C30081EF84 /* DeviceInput.swift */,
-			);
-			path = QRCode;
-=======
 		D6AA700820AD2207001B3F91 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +107,6 @@
 				D6AA701320AD39A1001B3F91 /* Game.swift */,
 			);
 			path = Model;
->>>>>>> a8be006d51b24156334d21a947f6f72bb93993c4
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +169,6 @@
 			files = (
 				D6AA6FFD20AD1A20001B3F91 /* LaunchScreen.storyboard in Resources */,
 				D6AA6FFA20AD1A20001B3F91 /* Assets.xcassets in Resources */,
-				E074A4E920AD21220081EF84 /* QRCode.storyboard in Resources */,
 				D6AA6FF820AD1A1F001B3F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,16 +184,11 @@
 				D6AA701420AD39A1001B3F91 /* Game.swift in Sources */,
 				D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */,
 				D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */,
-<<<<<<< HEAD
-				E074A4EB20AD217F0081EF84 /* QRCodeViewController.swift in Sources */,
-=======
 				D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */,
 				D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */,
 				D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */,
 				D6AA700A20AD24B6001B3F91 /* RecordTableViewCell.swift in Sources */,
->>>>>>> a8be006d51b24156334d21a947f6f72bb93993c4
 				D6AA6FF320AD1A1F001B3F91 /* AppDelegate.swift in Sources */,
-				E074A4EE20AD39C30081EF84 /* DeviceInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,17 +332,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPX664SYD7;
+				DEVELOPMENT_TEAM = 47R4BK8PQH;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,17 +350,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPX664SYD7;
+				DEVELOPMENT_TEAM = 47R4BK8PQH;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
