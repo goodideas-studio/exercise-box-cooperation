@@ -98,7 +98,7 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
   
   private func checkQRCodeVaild(qrCode: String) -> Bool {
     let prefixString = qrCodeString.prefix(7)
-    guard prefixString == "AppCamp" else {
+    guard prefixString == "appCamp" else {
       return false
     }
     return true
