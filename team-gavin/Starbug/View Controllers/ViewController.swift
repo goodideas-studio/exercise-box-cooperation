@@ -20,12 +20,25 @@ class MainViewCOntroller: UIViewController {
     
     var getConinsRemaining = UserDefaults.getCoinsLeft()
     tokenRemainingLabel.text = "剩餘代幣\(getConinsRemaining)"
+    
+    var rpsGameRounds = UserDefaults.getRpsGameRounds()
+    var guessGameRounds = UserDefaults.getGuessGameRound()
+    var totalGameRound = rpsGameRounds + guessGameRounds
+    APPPlayedTimesLabel.text = "一共玩了\(totalGameRound)次遊戲"
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
+    var launchedTimes = userdefaults.integer(forKey: UserDefaults.Keys.appLaunchTimes)
+    APPLaunchedTimesCountLabel.text = "APP 被打開\(launchedTimes)次"
     var getConinsRemaining = UserDefaults.getCoinsLeft()
     tokenRemainingLabel.text = "剩餘代幣\(getConinsRemaining)"
+    
+    var rpsGameRounds = UserDefaults.getRpsGameRounds()
+    var guessGameRounds = UserDefaults.getGuessGameRound()
+    var totalGameRound = rpsGameRounds + guessGameRounds
+    APPPlayedTimesLabel.text = "一共玩了\(totalGameRound)次遊戲"
+
   }
   
   override func didReceiveMemoryWarning() {
