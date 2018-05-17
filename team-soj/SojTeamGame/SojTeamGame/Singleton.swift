@@ -15,7 +15,7 @@ class Record{
         
     }
     
-    var coin:Int = UserDefaults.standard.integer(forKey: "coin") == 500 ? 500 : UserDefaults.standard.integer(forKey: "coin")
+    var coin:Int = UserDefaults.standard.integer(forKey: "coin") == 0 ? 500 : UserDefaults.standard.integer(forKey: "coin")
     
     var gameOneScore:Int = UserDefaults.standard.integer(forKey: "gameOneScore") == 0 ? 0 : UserDefaults.standard.integer(forKey: "gameOneScore")
     var gameTwoScore:Int = UserDefaults.standard.integer(forKey: "gameTwoScore") == 0 ? 0 : UserDefaults.standard.integer(forKey: "gameTwoScore")
