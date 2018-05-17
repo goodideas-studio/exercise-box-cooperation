@@ -16,6 +16,8 @@ class ResultViewController: UIViewController {
     
     var highestScore:Int?
     
+    var playRecords = [[String:Any]]()
+//    var playRecords = [PlayRecord]()
     
     
     
@@ -35,15 +37,23 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func restartButton(_ sender: UIButton) {
-        let date = getTime()
-      
-        let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: date)
-      
-        let storyBoard = UIStoryboard(name: "GameRecords", bundle: nil)
+
+//        guard let playRecord = UserDefaults.standard.object(forKey: "guessPlayRecord") else {
+//          UserDefaults.standard.set(playRecords, forKey: "guessPlayRecord")
+//          scoreForResult = 0
+//          return
+//        }
+//
+//        playRecords = UserDefaults.standard.object(forKey: "guessPlayRecord") as! [PlayRecord]
+//        playRecords.append(guessGameRecord)
+//
+//        UserDefaults.standard.set(playRecords, forKey: "guessPlayRecord")
         
-        if let recordVC = storyBoard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
-            recordVC.gameRecordArray.append(guessGameRecord)
-        }
+//        let storyBoard = UIStoryboard(name: "GameRecords", bundle: nil)
+//
+//        if let recordVC = storyBoard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
+//            recordVC.gameRecordArray.append(guessGameRecord)
+//        }
         scoreForResult = 0
     }
     
@@ -69,9 +79,25 @@ class ResultViewController: UIViewController {
         print("題數",self.highestScore!)
         if scoreForResult! >= self.highestScore! {
             
-            UserDefaults.standard.set(scoreForResult!, forKey: "highScoreInGuess")
-            print(scoreForResult!)
+//            UserDefaults.standard.set(scoreForResult!, forKey: "highScoreInGuess")
+//            print(scoreForResult!)
         }
+        
+        
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let date = getTime()
+        
+        let guessGameRecord = ["title": "Guess Game", "score": scoreForResult!, "date": date] as [String : Any]
+        
+        playRecords.append(guessGameRecord)
+        
+        UserDefaults.standard.set(playRecords, forKey: "record2")
+        print(UserDefaults.standard.value(forKey:"record2"))
         
     }
 

@@ -41,6 +41,7 @@ class HomeViewController:UIViewController{
         super.viewDidLoad()
 
         questionView.layer.cornerRadius = 10
+        
 
 
         
