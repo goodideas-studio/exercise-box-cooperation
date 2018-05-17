@@ -9,7 +9,13 @@
 import UIKit
 
 class MainViewCOntroller: UIViewController {
-  @IBOutlet weak var APPLaunchedTimesCountLabel: UILabel!
+    
+    @IBOutlet weak var infoOutlet: UIView!
+    @IBOutlet weak var startOutlet: UIButton!
+    
+    @IBOutlet weak var gameRecordOutlet: UIButton!
+    @IBOutlet weak var rechargeOutlet: UIButton!
+    @IBOutlet weak var APPLaunchedTimesCountLabel: UILabel!
   @IBOutlet weak var APPPlayedTimesLabel: UILabel!
   @IBOutlet weak var tokenRemainingLabel: UILabel!
   let userdefaults = UserDefaults.standard
@@ -28,6 +34,10 @@ class MainViewCOntroller: UIViewController {
     var guessGameRounds = UserDefaults.getGuessGameRound()
     var totalGameRound = rpsGameRounds + guessGameRounds
     APPPlayedTimesLabel.text = "一共玩了\(totalGameRound)次遊戲"
+    infoOutlet.layer.cornerRadius = 10
+    startOutlet.layer.cornerRadius = 10
+    gameRecordOutlet.layer.cornerRadius = 10
+    rechargeOutlet.layer.cornerRadius = 10
   }
 
   override func viewWillAppear(_ animated: Bool) {

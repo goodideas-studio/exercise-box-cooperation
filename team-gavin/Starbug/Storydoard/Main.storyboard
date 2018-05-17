@@ -103,7 +103,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.54837328767123283" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="YPU-bR-09J" secondAttribute="trailing" constant="58" id="4ts-MX-H13"/>
                                     <constraint firstAttribute="trailing" secondItem="hwr-mu-E18" secondAttribute="trailing" constant="58" id="6zX-ND-8VT"/>
@@ -146,6 +146,10 @@
                     <connections>
                         <outlet property="APPLaunchedTimesCountLabel" destination="QFk-GP-2IT" id="urp-u5-ftq"/>
                         <outlet property="APPPlayedTimesLabel" destination="YPU-bR-09J" id="efv-pr-DgB"/>
+                        <outlet property="gameRecordOutlet" destination="Vn7-RA-yih" id="eiq-m3-RWf"/>
+                        <outlet property="infoOutlet" destination="Ybg-dk-HXg" id="hw8-7V-h6g"/>
+                        <outlet property="rechargeOutlet" destination="w23-cb-yiR" id="E7y-fM-uW3"/>
+                        <outlet property="startOutlet" destination="qc1-Hi-HJA" id="CQ0-0V-uC1"/>
                         <outlet property="tokenRemainingLabel" destination="hwr-mu-E18" id="Lyc-8I-V8b"/>
                     </connections>
                 </viewController>
@@ -223,6 +227,8 @@
                     <connections>
                         <outlet property="goGuessGameBtn" destination="Yg8-Ad-q5W" id="Yxo-ur-LBc"/>
                         <outlet property="goRPSGameBtn" destination="xSe-nD-zLo" id="r7C-E4-A64"/>
+                        <outlet property="guessOutlet" destination="Yg8-Ad-q5W" id="ocW-MV-DgZ"/>
+                        <outlet property="rpsOutlet" destination="xSe-nD-zLo" id="MRe-rl-UdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G88-WW-pc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,6 +275,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4lw-Ay-ZM1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.050980392159999999" green="0.2784313725" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -284,4 +294,5 @@
         <image name="background" width="2310" height="1534"/>
         <image name="coin" width="48" height="48"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
