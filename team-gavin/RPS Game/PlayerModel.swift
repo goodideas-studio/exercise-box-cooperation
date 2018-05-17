@@ -30,9 +30,9 @@ struct PlayRecord {
     
     let gameTitle:String
     let score:Int
-    let date:Date
+    let date:String
     
-    init(title:String,score:Int,date:Date) {
+    init(title:String,score:Int,date:String) {
         self.gameTitle = title
         self.score = score
         self.date = date

@@ -184,14 +184,15 @@ class ViewController: UIViewController {
     
     func gameOver() {
         
-
-        let recordDic = ["playCounts":Player.playRPSCount,"playItem":"RPS Game","score":player.score,"currentTime":getTime()] as [String : Any]
+        let date = getTime()
+        let rgsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
         
-        if gameStart {
-            UserDefaults.standard.set(recordDic, forKey: "playRecord")
-        }
-//        
-        print("UserDefaults：\(UserDefaults.standard.value(forKey: "playRecord")!)")
+        
+//        if gameStart {
+//            UserDefaults.standard.set(recordDic, forKey: "playRecord")
+//        }
+//
+//        print("UserDefaults：\(UserDefaults.standard.value(forKey: "playRecord")!)")
         
         gameTimer.invalidate()
         
