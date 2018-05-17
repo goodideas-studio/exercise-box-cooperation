@@ -87,16 +87,24 @@
 		70DF003020AD1DE7004F5BD0 /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				70DF003120AD1E00004F5BD0 /* RPSGame */,
+				70DF003220AD2118004F5BD0 /* Guess Game */,
+				70DF003120AD1E00004F5BD0 /* RPS Game */,
 			);
 			path = Games;
 			sourceTree = "<group>";
 		};
-		70DF003120AD1E00004F5BD0 /* RPSGame */ = {
+		70DF003120AD1E00004F5BD0 /* RPS Game */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = RPSGame;
+			path = "RPS Game";
+			sourceTree = "<group>";
+		};
+		70DF003220AD2118004F5BD0 /* Guess Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Guess Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
