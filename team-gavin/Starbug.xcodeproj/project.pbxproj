@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D0175DE20AD2117005873CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0175DD20AD2116005873CC /* Main.storyboard */; };
+		4D0175E020AD2633005873CC /* GameRecords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0175DF20AD2633005873CC /* GameRecords.storyboard */; };
+		4D0175E320AD26E6005873CC /* GameRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0175E220AD26E6005873CC /* GameRecordsViewController.swift */; };
+		4D0175E520AD28E1005873CC /* GameRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0175E420AD28E1005873CC /* GameRecordCell.swift */; };
 		70DF001B20AD1936004F5BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF001A20AD1936004F5BD0 /* AppDelegate.swift */; };
 		70DF001D20AD1936004F5BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF001C20AD1936004F5BD0 /* ViewController.swift */; };
 		70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DF002120AD1937004F5BD0 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		4D0175DD20AD2116005873CC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4D0175DF20AD2633005873CC /* GameRecords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameRecords.storyboard; sourceTree = "<group>"; };
+		4D0175E220AD26E6005873CC /* GameRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordsViewController.swift; sourceTree = "<group>"; };
+		4D0175E420AD28E1005873CC /* GameRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordCell.swift; sourceTree = "<group>"; };
 		70DF001720AD1936004F5BD0 /* Starbug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DF001A20AD1936004F5BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70DF001C20AD1936004F5BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0175E120AD26B0005873CC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70DF001C20AD1936004F5BD0 /* ViewController.swift */,
+				4D0175E220AD26E6005873CC /* GameRecordsViewController.swift */,
+				4D0175E420AD28E1005873CC /* GameRecordCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		70DF000E20AD1936004F5BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +72,11 @@
 		70DF001920AD1936004F5BD0 /* Starbug */ = {
 			isa = PBXGroup;
 			children = (
+				4D0175E120AD26B0005873CC /* View Controllers */,
 				70DF003020AD1DE7004F5BD0 /* Games */,
 				70DF002F20AD1DCE004F5BD0 /* Storydoard */,
 				70DF002C20AD1AA2004F5BD0 /* Extension */,
 				70DF001A20AD1936004F5BD0 /* AppDelegate.swift */,
-				70DF001C20AD1936004F5BD0 /* ViewController.swift */,
 				70DF002120AD1937004F5BD0 /* Assets.xcassets */,
 				70DF002620AD1937004F5BD0 /* Info.plist */,
 			);
@@ -80,6 +96,7 @@
 			children = (
 				4D0175DD20AD2116005873CC /* Main.storyboard */,
 				70DF002320AD1937004F5BD0 /* LaunchScreen.storyboard */,
+				4D0175DF20AD2633005873CC /* GameRecords.storyboard */,
 			);
 			path = Storydoard;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70DF002520AD1937004F5BD0 /* LaunchScreen.storyboard in Resources */,
+				4D0175E020AD2633005873CC /* GameRecords.storyboard in Resources */,
 				70DF002220AD1937004F5BD0 /* Assets.xcassets in Resources */,
 				4D0175DE20AD2117005873CC /* Main.storyboard in Resources */,
 			);
@@ -179,6 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70DF001D20AD1936004F5BD0 /* ViewController.swift in Sources */,
+				4D0175E520AD28E1005873CC /* GameRecordCell.swift in Sources */,
+				4D0175E320AD26E6005873CC /* GameRecordsViewController.swift in Sources */,
 				70DF001B20AD1936004F5BD0 /* AppDelegate.swift in Sources */,
 				70DF002E20AD1AD1004F5BD0 /* UserDefaults.swift in Sources */,
 			);

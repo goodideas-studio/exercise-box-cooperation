@@ -41,6 +41,9 @@
                                 <state key="normal" title="遊戲紀錄">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XrL-Rc-uJg" kind="show" id="iLE-wQ-Wl5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w23-cb-yiR">
                                 <rect key="frame" x="87" y="559" width="200" height="30"/>
@@ -135,6 +138,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Ccf-Ws-cW3">
+            <objects>
+                <viewControllerPlaceholder id="XrL-Rc-uJg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCt-YK-dIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cna-cc-WIC">
