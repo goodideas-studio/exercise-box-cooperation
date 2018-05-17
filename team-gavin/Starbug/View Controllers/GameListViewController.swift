@@ -51,6 +51,7 @@ class GameListViewController: UIViewController {
   @IBOutlet weak var goRPSGameBtn: UIButton!
   override func viewDidLoad() {
     super.viewDidLoad()
+
   }
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
@@ -59,18 +60,6 @@ class GameListViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
   
-//  func checkIfYouHaveMoney() {
-//    var tempCoinsRemaining = UserDefaults.getCoinsLeft()
-//    print(tempCoinsRemaining)
-//    if tempCoinsRemaining < 100 {
-//      goRPSGameBtn.isEnabled = false
-//      goGuessGameBtn.isEnabled = false
-//      pompAlertVC(title: "Sorry", msg: "Yo dont have enough $$", actTitle: "Come back next time")
-//    } else {
-//      goGuessGameBtn.isEnabled = true
-//      goRPSGameBtn.isEnabled = true
-//    }
-//  }
   func pompAlertVC(title: String, msg: String, actTitle: String) -> UIAlertController {
     let alert = UIAlertController(title: title, message: msg, preferredStyle: .actionSheet)
     let alertAct = UIAlertAction(title: actTitle, style: .default, handler: nil)

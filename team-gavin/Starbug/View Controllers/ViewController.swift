@@ -15,6 +15,9 @@ class MainViewCOntroller: UIViewController {
   let userdefaults = UserDefaults.standard
   override func viewDidLoad() {
     super.viewDidLoad()
+    //remove the backItem on next nav VC
+    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
   var launchedTimes = userdefaults.integer(forKey: UserDefaults.Keys.appLaunchTimes)
     APPLaunchedTimesCountLabel.text = "APP 被打開\(launchedTimes)次"
     
