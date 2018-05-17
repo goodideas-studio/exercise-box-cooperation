@@ -23,11 +23,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-<<<<<<< HEAD
 	<string>QRCode</string>
-=======
-	<string>TapStarbucks</string>
->>>>>>> a8be006d51b24156334d21a947f6f72bb93993c4
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
