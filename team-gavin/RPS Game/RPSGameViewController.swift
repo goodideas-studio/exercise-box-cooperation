@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     var random = ""
     var winOrLose = ""
     
+    var gameArray = [[String:Any]]()
+    
     //RPS Outlet
     @IBOutlet weak var firstLineImage: UIImageView!
     @IBOutlet weak var gameTitle: UILabel!
@@ -185,14 +187,10 @@ class ViewController: UIViewController {
     func gameOver() {
         
         let date = getTime()
-        let rpsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
-        
+//        let rpsRecord = PlayRecord(title: "RPS Game", score: player.score, date: date)
+        let rpsGameRecord = ["title": "RPS Game", "score": player.score, "date": date] as [String : Any]
         if gameStart {
-            let storyboard = UIStoryboard(name: "GameRecords", bundle: nil)
-            if let tableViewController = storyboard.instantiateViewController(withIdentifier: "GameRecordsViewController") as? GameRecordsViewController {
-                print("傳值")
-                tableViewController.gameRecordArray.append(rpsRecord)
-            }
+            gameArray.append(rpsGameRecord)
         }
 //
 //        print("UserDefaults：\(UserDefaults.standard.value(forKey: "playRecord")!)")
@@ -250,6 +248,8 @@ class ViewController: UIViewController {
     
   @IBAction func goBack(_ sender: Any) {
     self.dismiss(animated: true, completion: nil)
+    
+    UserDefaults.standard.set(gameArray, forKey: "rpsGameArray")
   }
   
 }

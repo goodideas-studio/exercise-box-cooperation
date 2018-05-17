@@ -7,7 +7,7 @@
 import UIKit
 
 class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-  var gameRecordArray: [PlayRecord] = []
+    var gameRecordArray: [[String:Any]] = []
   
   
   @IBOutlet weak var gameRecordTableView: UITableView!
@@ -18,6 +18,8 @@ class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableV
   }
     
   override func viewWillAppear(_ animated: Bool) {
+//    let array = UserDefaults.standard.array(forKey: "rpsGameArray") as! [Any]
+    gameRecordArray = UserDefaults.standard.array(forKey: "rpsGameArray") as! [[String : Any]]
     print(gameRecordArray)
     gameRecordTableView.reloadData()
   }
@@ -32,10 +34,10 @@ class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableV
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell") as! GameRecordCell
-    cell.itemOrderLabel.text = "\(indexPath.row)"
-    cell.gameNameLabel.text = "Starbug"
-    cell.PlayedDateLabel.text = "2018/05/17 11:30"
-    cell.gameScoreLabel.text = "87"
+    cell.itemOrderLabel.text = "\(indexPath.row + 1)"
+    cell.gameNameLabel.text = "\(gameRecordArray[indexPath.row]["title"]!)"
+    cell.PlayedDateLabel.text = "\(gameRecordArray[indexPath.row]["date"]!)"
+    cell.gameScoreLabel.text = "\(gameRecordArray[indexPath.row]["score"]!)"
     
     return cell
   }
