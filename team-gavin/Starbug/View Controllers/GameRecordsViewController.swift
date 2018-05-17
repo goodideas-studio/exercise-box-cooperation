@@ -1,10 +1,8 @@
-//
 //  GameRecordsViewController.swift
 //  Starbug
 //
 //  Created by 唐嘉伶 on 2018/5/17.
 //  Copyright © 2018 PinguMac. All rights reserved.
-//
 
 import UIKit
 
