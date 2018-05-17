@@ -21,7 +21,8 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var preViewLayer = AVCaptureVideoPreviewLayer()
     var labeltext: String!
     var receiptNum7start: String? = ""
-    var receiptNum3:String = ""
+//    var receiptNum3:String = ""
+    var finalText = ""
     var output = AVCaptureMetadataOutput()
     var deviceInput = DeviceInput()
     
@@ -100,7 +101,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         showCoinLabel.textAlignment = .center
         
         
-        self.view.addSubview(codeLabel)
+//        self.view.addSubview(codeLabel)
         self.view.addSubview(CoinLabel)
         self.view.addSubview(showCoinLabel)
 //        self.view.addSubview(typeLabel)
@@ -171,13 +172,14 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         let receiptNum10start = String(labeltext.prefix(10))
         receiptNum7start = String(labeltext.prefix(7))
         
-        let receiptNum3start = labeltext.index(labeltext.startIndex, offsetBy:7)
-        let receiptNum3end = labeltext.index(receiptNum3start, offsetBy:3)
-        receiptNum3 = String(labeltext[ receiptNum3start ..< receiptNum3end])
-        
+//        let receiptNum3start = labeltext.index(labeltext.startIndex, offsetBy:7)
+//        let receiptNum3end = labeltext.index(receiptNum3start, offsetBy:3)
+        finalText = String(labeltext.dropFirst(7))
+//        receiptNum3 = String(labeltext[ receiptNum3start ..< receiptNum3end])
+        print(finalText)
         //顯示 QRcode 內容
         codeLabel.text = receiptNum7start
-        showCoinLabel.text = receiptNum3
+//        showCoinLabel.text = receiptNum3
 
         comparemetadata()
         
@@ -189,7 +191,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     func comparemetadata() {
         if receiptNum7start == "AppCamp" {
-//            session.stopRunning()
+            session.stopRunning()
             print("the metadata is correct")
             popokAlert()
 
@@ -209,7 +211,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         // 建立一個提示框
         let alertController = UIAlertController(
             title: "恭喜",
-            message: "成功儲值 \(receiptNum3)，按下確認返回",
+            message: "成功儲值 \(finalText)，按下確認返回",
             preferredStyle: .alert)
         
         // 建立[確認]按鈕
@@ -218,7 +220,8 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             style: .default,
             handler: {
                 (action: UIAlertAction!) -> Void in
-                Record.current.addCoin(addCoin: Int(self.receiptNum3)!)
+                Record.current.addCoin(addCoin: Int(self.finalText)!)
+                self.showCoinLabel.text = "\(Record.current.coin)"
                 print(Record.current.coin)
                 print("按下確認後，閉包裡的動作")
         })
