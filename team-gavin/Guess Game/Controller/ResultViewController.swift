@@ -10,7 +10,6 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    
     var scoreForResult:Int?
     
 //    var highScoreInGuess:Int?
@@ -20,12 +19,21 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var restartOutlet: UIButton!
     
+    func getTime() -> String {
+        let now = Date()
+        
+        let dformatter = DateFormatter()
+        dformatter.dateFormat = "yyyy/MM/dd/ HH:mm"
+        //print("当前日期时间：\(dformatter.string(from: now))")
+        
+        let date = dformatter.string(from: now)
+        
+        return date
+    }
+    
     @IBAction func restartButton(_ sender: UIButton) {
         scoreForResult = 0
-        
-        
-        
-        
+        let guessGameRecord = PlayRecord(title: "Guess Game", score: scoreForResult!, date: <#T##Date#>)
         
     }
     
