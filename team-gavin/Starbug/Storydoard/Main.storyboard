@@ -84,7 +84,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩餘代幣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwr-mu-E18">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwr-mu-E18">
                                         <rect key="frame" x="57" y="112" width="140" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="3cO-ej-8mD"/>
@@ -154,16 +154,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg8-Ad-q5W">
                                 <rect key="frame" x="40" y="94" width="295" height="40"/>
                                 <color key="backgroundColor" red="0.25882352941176473" green="0.50588235294117645" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Guess">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="goGuessGame:" destination="yUz-Zb-gFy" eventType="touchUpInside" id="W4C-Wb-z73"/>
+                                    <segue destination="CIU-jC-waY" kind="show" id="8el-42-zrQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-nD-zLo">
                                 <rect key="frame" x="40" y="154" width="295" height="40"/>
                                 <color key="backgroundColor" red="0.25882352939999997" green="0.50588235290000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="RPS Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="goRPSGame:" destination="yUz-Zb-gFy" eventType="touchUpInside" id="yAX-ba-vmr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmN-nF-h9t">
                                 <rect key="frame" x="253" y="60" width="42" height="21"/>
@@ -171,8 +178,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-DR-NC5">
-                                <rect key="frame" x="253" y="119" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-DR-NC5">
+                                <rect key="frame" x="263" y="104" width="37" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-r3-gWr">
+                                <rect key="frame" x="263" y="164" width="37" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -186,8 +201,6 @@
                             <constraint firstItem="Yg8-Ad-q5W" firstAttribute="height" secondItem="Voh-t4-Vas" secondAttribute="height" multiplier="0.06" id="JQV-OJ-VRO"/>
                             <constraint firstItem="JmN-nF-h9t" firstAttribute="width" secondItem="Yg8-Ad-q5W" secondAttribute="width" multiplier="0.3" id="MMC-hW-ref"/>
                             <constraint firstItem="xSe-nD-zLo" firstAttribute="height" secondItem="Voh-t4-Vas" secondAttribute="height" multiplier="0.06" id="Vzg-4a-iuN"/>
-                            <constraint firstItem="qKp-DR-NC5" firstAttribute="width" secondItem="xSe-nD-zLo" secondAttribute="width" constant="0.29999999999999999" id="WLQ-jO-dzg"/>
-                            <constraint firstItem="qKp-DR-NC5" firstAttribute="height" secondItem="xSe-nD-zLo" secondAttribute="height" constant="0.59999999999999998" id="c79-94-PlO"/>
                             <constraint firstItem="Yg8-Ad-q5W" firstAttribute="top" secondItem="I7t-dX-Gff" secondAttribute="top" constant="30" id="ekE-km-kVI"/>
                             <constraint firstItem="I7t-dX-Gff" firstAttribute="trailing" secondItem="xSe-nD-zLo" secondAttribute="trailing" constant="40" id="fKQ-dn-BfS"/>
                             <constraint firstItem="Yg8-Ad-q5W" firstAttribute="leading" secondItem="I7t-dX-Gff" secondAttribute="leading" constant="40" id="lt8-09-rod"/>
@@ -196,10 +209,22 @@
                         <viewLayoutGuide key="safeArea" id="I7t-dX-Gff"/>
                     </view>
                     <navigationItem key="navigationItem" title="遊戲列表" id="6Nt-D4-jgW"/>
+                    <connections>
+                        <outlet property="goGuessGameBtn" destination="Yg8-Ad-q5W" id="Yxo-ur-LBc"/>
+                        <outlet property="goRPSGameBtn" destination="xSe-nD-zLo" id="r7C-E4-A64"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G88-WW-pc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="-77"/>
+            <point key="canvasLocation" x="2182" y="-32"/>
+        </scene>
+        <!--Guess-->
+        <scene sceneID="xGh-kT-ozi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Guess" id="CIU-jC-waY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScQ-mo-ZvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954" y="-40"/>
         </scene>
         <!--GameRecords-->
         <scene sceneID="Ccf-Ws-cW3">

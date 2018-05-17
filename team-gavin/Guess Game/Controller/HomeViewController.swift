@@ -9,9 +9,7 @@
 import UIKit
 
 class HomeViewController:UIViewController{
-    @IBAction func backSegue(_ segue:UIStoryboardSegue){
-        
-    }
+
     
     var resultFromGuess:String = ""
     
