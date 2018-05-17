@@ -69,6 +69,15 @@ Members：Jeremy / Iris / Ells / Gavin / 菘駿 / Morris / Ethan / Sonny
 ![Game Coin](readme/game-coin.png)
 
 - 通過相機掃描 QRCode 進行儲值
-- QRCode 的內容會是「appCamp + 數字」這樣的格式，比如「appCamp200」代表儲值200。
+- QRCode 的內容會是「AppCamp 數字」這樣的格式，比如「AppCamp200」代表儲值200。
 - 如果相機中出現的 QRCode 不符合上面的格式，直接忽略即可。
 - 如果掃描到指定的格式，則跳回「儲值」介面並跳出成功提示。
+
+### QRCode 例子
+AppCamp200
+
+![AppCamp200](readme/AppCamp200.png)
+
+AppCamp400
+
+![AppCamp400](readme/AppCamp400.png)
