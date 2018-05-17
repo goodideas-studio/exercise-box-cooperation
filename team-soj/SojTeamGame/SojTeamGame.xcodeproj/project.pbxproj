@@ -19,6 +19,8 @@
 		D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */; };
 		D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701020AD38ED001B3F91 /* GameListViewController.swift */; };
 		D6AA701420AD39A1001B3F91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA701320AD39A1001B3F91 /* Game.swift */; };
+		E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969520AD66E100B1BF41 /* DeviceInput.swift */; };
+		E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E020969620AD66E100B1BF41 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D6AA700E20AD2DC5001B3F91 /* GameListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListTableViewCell.swift; sourceTree = "<group>"; };
 		D6AA701020AD38ED001B3F91 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		D6AA701320AD39A1001B3F91 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E020969520AD66E100B1BF41 /* DeviceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInput.swift; sourceTree = "<group>"; };
+		E020969620AD66E100B1BF41 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		D6AA6FF120AD1A1F001B3F91 /* SojTeamGame */ = {
 			isa = PBXGroup;
 			children = (
+				E020969520AD66E100B1BF41 /* DeviceInput.swift */,
+				E020969620AD66E100B1BF41 /* QRCodeViewController.swift */,
 				D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */,
 				D6AA701220AD3992001B3F91 /* Model */,
 				D6AA700820AD2207001B3F91 /* View */,
@@ -182,8 +188,10 @@
 			files = (
 				D6AA6FF520AD1A1F001B3F91 /* MenuViewController.swift in Sources */,
 				D6AA701420AD39A1001B3F91 /* Game.swift in Sources */,
+				E020969820AD66E100B1BF41 /* QRCodeViewController.swift in Sources */,
 				D6AA700720AD21E1001B3F91 /* ButtonStyle.swift in Sources */,
 				D6AA700520AD1A3B001B3F91 /* Singleton.swift in Sources */,
+				E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */,
 				D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */,
 				D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */,
 				D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */,
@@ -333,13 +341,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47R4BK8PQH;
+				DEVELOPMENT_TEAM = DPX664SYD7;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame12333;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,13 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47R4BK8PQH;
+				DEVELOPMENT_TEAM = DPX664SYD7;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.SojTeamGame12333;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SojTeamGame.xcodeproj">
+      location = "group:DeviceInput.swift">
+   </FileRef>
+   <FileRef
+      location = "group:QRCodeViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
