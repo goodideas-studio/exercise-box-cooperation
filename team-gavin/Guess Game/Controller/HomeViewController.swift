@@ -39,16 +39,13 @@ class HomeViewController:UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         questionView.layer.cornerRadius = 10
-
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("HomeVC willAppear")
         print(UserDefaults.standard.integer(forKey: "highScoreInGuess"))
-        var playTimesFromGuess = "\(UserDefaults.standard.integer(forKey: "playTimesInGuess"))"
+        let playTimesFromGuess = "\(UserDefaults.standard.integer(forKey: "playTimesInGuess"))"
         
         guessTimesLabel.text = "\(playTimesFromGuess) 次"
         
