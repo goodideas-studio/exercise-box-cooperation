@@ -196,7 +196,7 @@ class BlackJackVC: UIViewController {
     
     // MARK: - Timer
     func startTimer() {
-        if isPlaying == false{
+        if isPlaying == false {
             countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             isPlaying = true
         }
@@ -245,7 +245,7 @@ class BlackJackVC: UIViewController {
         
     }
     
-    // MARK: - Life Cycle
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         bankrupt.isHidden = true
