@@ -32,7 +32,6 @@ class GameRecordsViewController: UIViewController, UITableViewDelegate, UITableV
         }
         gameRecordArray = UserDefaults.standard.array(forKey: "StarBug") as! [[String : Any]]
         UserDefaults.standard.set(nil, forKey: "StarBug")
-        print(gameRecordArray)
         
         totalArray += gameRecordArray
         

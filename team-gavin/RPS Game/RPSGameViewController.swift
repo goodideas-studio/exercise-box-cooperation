@@ -239,7 +239,7 @@ class ViewController: UIViewController {
         dformatter.dateFormat = "yyyy/MM/dd/ HH:mm"
         //        print("当前日期时间：\(dformatter.string(from: now))")
         
-        let date = dformatter.string(from: now)
+        let date = dformatter.string( from: now)
         
         return date
     }
@@ -251,6 +251,8 @@ class ViewController: UIViewController {
         
         UserDefaults.standard.set(gameArray, forKey: "StarBug")
     }
+    
+    // 垃圾訊息
     
 }
 

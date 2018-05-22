@@ -12,7 +12,9 @@ class GameListViewController: UIViewController {
   @IBAction func backSegue(_ segue:UIStoryboardSegue){
     
   }
-  @IBAction func goGuessGame(_ sender: Any) {
+    @IBOutlet weak var rpsOutlet: UIButton!
+    @IBOutlet weak var guessOutlet: UIButton!
+    @IBAction func goGuessGame(_ sender: Any) {
     var tempCoinsRemaining = UserDefaults.getCoinsLeft()
     if tempCoinsRemaining < 100 {
       goGuessGameBtn.isEnabled = false
@@ -51,6 +53,8 @@ class GameListViewController: UIViewController {
   @IBOutlet weak var goRPSGameBtn: UIButton!
   override func viewDidLoad() {
     super.viewDidLoad()
+    guessOutlet.layer.cornerRadius = 10
+    rpsOutlet.layer.cornerRadius = 10
 
   }
   override func viewWillAppear(_ animated: Bool) {
