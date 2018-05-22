@@ -9,8 +9,9 @@
 import Foundation
 
 class Record{
-    static let current = Record()
     
+    static let current = Record()
+//    class let current = Record()
     private init(){
         
     }
@@ -62,3 +63,5 @@ class Record{
     }
     
 }
+
+

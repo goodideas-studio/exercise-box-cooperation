@@ -12,9 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var appLaunchTimes:Int? = UserDefaults.standard.integer(forKey: "appLaunchTimes") 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        appLaunchTimes = UserDefaults.standard.integer(forKey: "appLaunchTimes")
         // Override point for customization after application launch.
         return true
     }
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
+        print("程式要進入背景, APP開了\(appLaunchTimes)次")
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -31,6 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        appLaunchTimes! += 1
+        UserDefaults.standard.set(appLaunchTimes, forKey: "appLaunchTimes")
+        print("程式要回到前台, APP開了\(appLaunchTimes)次")
+        NotificationCenter.default.post(name: Notification.Name.UIApplicationWillEnterForeground, object: nil, userInfo: ["appLaunchTimes":appLaunchTimes])
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

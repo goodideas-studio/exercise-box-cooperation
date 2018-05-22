@@ -16,30 +16,36 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var totalGameTimes: UILabel!
     @IBOutlet weak var coinAmountLabel: UILabel!
     
-    var appLaunchTimes:Int?
-
+    //    var appLaunchTimes:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        appLaunchTimesLabel.text = "APP共開了\(UserDefaults.standard.integer(forKey: "appLaunchTimes"))次"
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLaunchTimes), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
         
-        appLaunchTimes = UserDefaults.standard.integer(forKey: "appLaunchTimes")
-        appLaunchTimes! += 1
-        appLaunchTimesLabel.text = "App共開了\(appLaunchTimes!)次"
-        UserDefaults.standard.set(appLaunchTimes, forKey: "appLaunchTimes")
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @objc func changeLaunchTimes(){
+        appLaunchTimesLabel.text = "APP共開了\(UserDefaults.standard.integer(forKey: "appLaunchTimes"))次"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
         totalGameTimes.text = "一共玩了:\(Record.current.gameOneTimes + Record.current.gameTwoTimes)次"
         coinAmountLabel.text = "\(Record.current.coin)"
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

@@ -218,14 +218,11 @@ class BlackJackVC: UIViewController {
             gamerWinResult.isHidden = true
             bankerWinResult.isHidden = true
             sameScore.isHidden = true
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy年M月d日 H:m"
-            let dateString = dateFormatter.string(from: Date())
             Record.current.gameTwoTimes += 1
             UserDefaults.standard.set(Record.current.gameTwoTimes, forKey: "gameTwoTimes")
             Record.current.addRecordScore(gameScore: Int(chipsLabel.text!)!)
             Record.current.addRecordGame(gameName: "BlackJacks")
-            Record.current.addRecordDate(gameDate: dateString)
+            Record.current.addRecordDate(gameDate: DateHelper.shared.convertDateFormat())
             UserDefaults.standard.set(max(Int(chipsLabel.text!)!, UserDefaults.standard.integer(forKey: "gameTwoScore")), forKey: "gameTwoScore")
         }
     }
