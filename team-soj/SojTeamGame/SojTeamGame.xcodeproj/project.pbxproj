@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60741C020AF2DFF00B7F573 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60741BF20AF2DFF00B7F573 /* DateHelper.swift */; };
 		D6AA6FF320AD1A1F001B3F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */; };
 		D6AA6FF520AD1A1F001B3F91 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */; };
 		D6AA6FF820AD1A1F001B3F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AA6FF620AD1A1F001B3F91 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60741BF20AF2DFF00B7F573 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		D6AA6FEF20AD1A1F001B3F91 /* SojTeamGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SojTeamGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				E020969520AD66E100B1BF41 /* DeviceInput.swift */,
 				E020969620AD66E100B1BF41 /* QRCodeViewController.swift */,
 				D6AA6FF220AD1A1F001B3F91 /* AppDelegate.swift */,
+				D60741BF20AF2DFF00B7F573 /* DateHelper.swift */,
 				D6AA701B20AD67AE001B3F91 /* TapStarbucks */,
 				D6AA701220AD3992001B3F91 /* Model */,
 				D6AA700820AD2207001B3F91 /* View */,
@@ -116,8 +119,8 @@
 		D6AA700D20AD2500001B3F91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */,
 				D6AA6FF420AD1A1F001B3F91 /* MenuViewController.swift */,
+				D6AA702A20AD8146001B3F91 /* BlackJackVC.swift */,
 				D6AA700B20AD24FD001B3F91 /* RecordViewController.swift */,
 				D6AA701020AD38ED001B3F91 /* GameListViewController.swift */,
 			);
@@ -227,6 +230,7 @@
 				E020969720AD66E100B1BF41 /* DeviceInput.swift in Sources */,
 				D6AA702120AD67AE001B3F91 /* TapStarbucksViewController.swift in Sources */,
 				D6AA700C20AD24FD001B3F91 /* RecordViewController.swift in Sources */,
+				D60741C020AF2DFF00B7F573 /* DateHelper.swift in Sources */,
 				D6AA701120AD38ED001B3F91 /* GameListViewController.swift in Sources */,
 				D6AA700F20AD2DC5001B3F91 /* GameListTableViewCell.swift in Sources */,
 				D6AA702320AD67AE001B3F91 /* TapStarbucksModel.swift in Sources */,
@@ -377,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KRCKVX62FU;
+				DEVELOPMENT_TEAM = NE9H5QPYHM;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,7 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KRCKVX62FU;
+				DEVELOPMENT_TEAM = NE9H5QPYHM;
 				INFOPLIST_FILE = SojTeamGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
